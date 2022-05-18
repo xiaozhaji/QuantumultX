@@ -20,13 +20,13 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me
 
 ;UDP 白名单，留空则默认所有为端口。不在udp白名单列表中的端口，将被丢弃处理（返回 ICMP  “端口不可达” 信息）。
-;udp_whitelist=1-442, 444-65535
+udp_whitelist=1-79, 81-442, 444-7999, 8001-65535
 
 # 参数 fallback_udp_policy 的值仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
 fallback_udp_policy=direct
 
 ;下列表中的内容将不经过 QuantumultX的处理，设置后建议重启设备
-excluded_routes=239.255.255.250/32, 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+excluded_routes= 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 239.255.255.250/32
 icmp_auto_reply=true
 
 [dns]
@@ -40,7 +40,7 @@ server=119.29.29.29
 server=61.153.81.74
 
 ;如指定 doh 服务，则👆️上面的一般 dns 解析均失效。
-;doh-server=https://dns.alidns.com/dns-query
+doh-server=https://dns.alidns.com/dns-query
 
 ;指定域名解析dns, 下面为示范，按需启用
 server=/*.taobao.com/223.5.5.5
@@ -65,13 +65,13 @@ static=Apple, 节点选择, direct, reject, img-url=https://raw.githubuserconten
 static=Speedtest, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png
 static=Final, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差20ms以上则切换为最新的最低延迟节点，否则继续延用节点
-url-latency-benchmark=自动选择, server-tag-regex=(?=.*(高级))^((?!Traffic|Expire).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
-url-latency-benchmark=0.2倍, server-tag-regex=实验性, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
-url-latency-benchmark=香港, server-tag-regex=(?=.*(香港高级|HK|(?i)Hong))^((?!(台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|TW|台灣|美國|韓國|獅城)).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾高级|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-url-latency-benchmark=日本, server-tag-regex=(?=.*(日本高级|JP|(?i)Japan))^((?!(香港|台湾|新加坡|美国|韩国|狮城|南朝鲜|US|SG|KR|HK|TW|台灣|美國|韓國|獅城)).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新加坡高级|狮城|SG|(?i)Singapore))^((?!(香港|台湾|日本|美国|韩国|南朝鲜|US|JP|KR|HK|TW|台灣|美國|韓國)).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-url-latency-benchmark=美国, server-tag-regex=(?=.*(美国高级|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性|HK|(?i)Hong)), check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加坡|台湾|美国).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png
 
 [server_remote]
