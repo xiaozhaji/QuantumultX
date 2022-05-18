@@ -76,7 +76,7 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
-https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf#udp=1&tfo=1&cert=-1, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=true, enabled=true
+https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf#udp=1&tfo=1&cert=-1, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=true, enabled=false
 
 [filter_remote]
 https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=false, enabled=true
