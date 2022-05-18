@@ -66,7 +66,7 @@ static=Speedtest, 节点选择, direct, reject, img-url=https://raw.githubuserco
 static=Final, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差20ms以上则切换为最新的最低延迟节点，否则继续延用节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
-url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性|HK|(?i)Hong)), check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
 url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性).)*$, check-interval=600, tolerance=20, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
