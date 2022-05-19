@@ -40,7 +40,7 @@ server=119.29.29.29
 server=61.153.81.74
 
 ;如指定 doh 服务，则👆️上面的一般 dns 解析均失效。
-doh-server=https://dns.alidns.com/dns-query
+;doh-server=https://dns.alidns.com/dns-query
 
 ;指定域名解析dns, 下面为示范，按需启用
 server=/*.taobao.com/223.5.5.5
