@@ -32,7 +32,7 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
 excluded_routes= 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 239.255.255.250/32
-icmp_auto_reply=true
+;icmp_auto_reply=true
 
 [dns]
 ; 禁用系统 DNS（no-system） 以及 ipv6
@@ -45,21 +45,17 @@ server=223.6.6.6
 server=119.29.29.29
 server=119.28.28.28
 ;server=61.153.81.74
+server=8.8.8.8
+server=8.8.4.4
 
 ;如指定 doh 服务，则👆️上面的一般 dns 解析均失效。
-;doh-server=https://dns.alidns.com/dns-query
+doh-server=https://dns.alidns.com/dns-query
+doh-server=https://doh.pub/dns-query
+doh-server=https://rubyfish.cn/dns-query
+doh-server=https://dns.google/dns-query
 
 ;指定域名解析dns, 下面为示范，按需启用
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.aliapp.org/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.alicdn.com/223.5.5.5
-server=/*.aliyuncs.com/223.5.5.5
-server=/*.alipayobjects.com/223.5.5.5
-server=/*.alipay.com.cn/223.5.5.5
-server=/www.miwifi.com/system
-server=/miwifi.com/system
+server=/*miwifi.com/system
 
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
@@ -92,35 +88,37 @@ https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=tr
 https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=true, enabled=false
 
 [filter_remote]
-https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=GEOIP(CN), force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/Apple.list, tag=苹果服务, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=社交媒体, force-policy=社交媒体, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Netflix.list, tag=Netflix, force-policy=流媒体, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=社交媒体, force-policy=社交媒体, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=GEOIP(CN), force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 
 [rewrite_remote]
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
 https://limbopro.com/Adblock4limbo.conf, tag=毒奶特供, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TikTok美区, update-interval=86400, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, tag=VSCO破解, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
 [filter_local]
 host, snssdk.com, direct
 host, amemv.com, direct
+host-suffix, time.is, direct
+host-suffix, ip-api.com, Speedtest
 host-suffix, test-ipv6.com, Speedtest
 host-suffix, apple.com, Apple
 host-suffix, icloud.com, Apple
@@ -142,8 +140,6 @@ host-keyword, msft, 节点选择
 host-suffix, msauth.net, 节点选择
 host-suffix, live.com, 节点选择
 host-keyword, microsoft, 节点选择
-;host-suffix, ip-api.com, direct
-host-suffix, time.is, direct
 # 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
 # 避免迅雷版权问题
 host, hub5idx.v6.shub.sandai.net, reject
