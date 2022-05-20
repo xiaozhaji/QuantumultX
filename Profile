@@ -25,7 +25,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me
 
 ;UDP 白名单，留空则默认所有为端口。不在udp白名单列表中的端口，将被丢弃处理（返回 ICMP  “端口不可达” 信息）。
-udp_whitelist=1-442, 444-65535
+;udp_whitelist=1-442, 444-65535
 
 # 参数 fallback_udp_policy 的值仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
 fallback_udp_policy=direct
@@ -83,7 +83,7 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 
-;https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
 👆️Trojan协议
 
 https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26ssr%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
