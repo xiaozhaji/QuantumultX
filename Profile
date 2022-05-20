@@ -28,7 +28,7 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;udp_whitelist=1-442, 444-65535
 
 # 参数 fallback_udp_policy 的值仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
-fallback_udp_policy=direct
+;fallback_udp_policy=direct
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
 excluded_routes= 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 239.255.255.250/32
