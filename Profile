@@ -45,11 +45,9 @@ server=223.6.6.6
 server=119.29.29.29
 server=119.28.28.28
 ;server=61.153.81.74
-server=8.8.8.8
-server=8.8.4.4
 
 ;如指定 doh 服务，则👆️上面的一般 dns 解析均失效。
-doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query, https://rubyfish.cn/dns-query, https://dns.google/dns-query
+;doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query, https://rubyfish.cn/dns-query
 
 ;指定域名解析dns, 下面为示范，按需启用
 server=/*.miwifi.com/system
