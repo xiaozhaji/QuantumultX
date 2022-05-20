@@ -55,7 +55,7 @@ doh-server=https://rubyfish.cn/dns-query
 doh-server=https://dns.google/dns-query
 
 ;指定域名解析dns, 下面为示范，按需启用
-server=/*miwifi.com/system
+server=/*.miwifi.com/system
 
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
