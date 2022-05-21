@@ -31,8 +31,8 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;fallback_udp_policy=direct
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
-excluded_routes= 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 239.255.255.250/32
-;icmp_auto_reply=true
+excluded_routes= 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32
+icmp_auto_reply=true
 
 [dns]
 ; 禁用系统 DNS（no-system） 以及 ipv6
@@ -110,6 +110,7 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=
 [server_local]
 
 [filter_local]
+# 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
 host, snssdk.com, direct
 host, amemv.com, direct
 host-suffix, time.is, direct
@@ -118,6 +119,7 @@ host-suffix, test-ipv6.com, Speedtest
 host-suffix, apple.com, Apple
 host-suffix, icloud.com, Apple
 host, gateway.icloud.com, Apple
+host, captive.apple.com, Apple
 host-suffix, weibocdn.com, 微博
 host-suffix, weibo.com, 微博
 host-suffix, weibo.cn, 微博
@@ -135,22 +137,27 @@ host-keyword, msft, 节点选择
 host-suffix, msauth.net, 节点选择
 host-suffix, live.com, 节点选择
 host-keyword, microsoft, 节点选择
-# 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
 # 避免迅雷版权问题
 host, hub5idx.v6.shub.sandai.net, reject
 host, hub5emu.v6.shub.sandai.net, reject
 host, hub5btmain.v6.shub.sandai.net, reject
-# 其他
+# 私有
 host-suffix, local, direct
+host-suffix, *.local, direct
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 169.254.0.0/16, direct
 ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 183.240.197.130/32, direct
+ip-cidr, 192.0.0.0/24, direct
+ip-cidr, 192.0.2.0/24, direct
+ip-cidr, 192.88.99.0/24, direct
 ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 203.107.1.1/24, reject
+ip-cidr, 198.51.100.0/24, direct
+ip-cidr, 203.0.113.0/24, direct
 ip-cidr, 224.0.0.0/4, direct
-ip-cidr, 239.255.0.0/16, direct
+ip-cidr, 255.255.255.255/32, direct
+ip-cidr, 239.255.255.250/32, direct
 ip6-cidr, fe80::/10, direct
 final, Final
 
