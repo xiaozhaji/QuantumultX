@@ -12,7 +12,7 @@ server_check_url=http://www.apple.com/library/test/success.html
 ;server_check_url=http://cp.cloudflare.com
 
 ;节点延迟测试超时参数，需小于 5000 毫秒才生效
-server_check_timeout=3000
+server_check_timeout=500
 
 ;👍👍👍资源解析器，可用于自定义各类远程资源的转换，如节点，规则 filter，复写 rewrite 等，url 地址可远程，可 本地/iCloud(Quantumult X/Scripts目录);
 ;下面是我写的一个解析器，具体内容直接参照链接里的使用说明
