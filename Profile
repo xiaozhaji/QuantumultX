@@ -83,29 +83,29 @@ https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=tr
 https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=true, enabled=false
 
 [filter_remote]
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=GEOIP(CN), force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/Apple.list, tag=苹果服务, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
-https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=社交媒体, force-policy=社交媒体, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Netflix.list, tag=Netflix, force-policy=流媒体, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=GEOIP(CN), force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/Apple.list, tag=苹果服务, force-policy=Apple, update-interval=86400, opt-parser=true, enabled=true
+https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=社交媒体, force-policy=社交媒体, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Netflix.list, tag=Netflix, force-policy=流媒体, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=true, enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
-https://limbopro.com/Adblock4limbo.conf, tag=毒奶特供, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TikTok美区, update-interval=86400, opt-parser=false, enabled=false
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, tag=VSCO破解, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=true, enabled=true
+https://limbopro.com/Adblock4limbo.conf, tag=毒奶特供, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TikTok美区, update-interval=86400, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, tag=VSCO破解, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, update-interval=86400, opt-parser=true, enabled=true
 
 [server_local]
 
