@@ -12,7 +12,7 @@ server_check_url=http://www.apple.com/library/test/success.html
 ;server_check_url=http://cp.cloudflare.com
 
 ;节点延迟测试超时参数，需小于 5000 毫秒才生效
-server_check_timeout=500
+;server_check_timeout=500
 
 ;👍👍👍资源解析器，可用于自定义各类远程资源的转换，如节点，规则 filter，复写 rewrite 等，url 地址可远程，可 本地/iCloud(Quantumult X/Scripts目录);
 ;下面是我写的一个解析器，具体内容直接参照链接里的使用说明
@@ -78,8 +78,8 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
 ;👆️Trojan协议
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26ssr%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
-;👆️SSR协议
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
+;👆️SS协议
 
 https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=false, enabled=false
 
