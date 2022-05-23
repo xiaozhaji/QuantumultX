@@ -111,15 +111,39 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=
 
 [filter_local]
 # 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
+
+# 直连
+host-keyword, synology, direct
+host-keyword, quickconnect, direct
+host-suffix, xiaozhaji.com, direct
+host-suffix, time.is, direct
+
+# 代理
+host-suffix, windy.com, 节点选择
+host-suffix, weather.com, 节点选择
+host-suffix, api.themoviedb.org, 节点选择
+host-suffix, thetvdb.com, 节点选择
+host-suffix, assets.fanart.tv, 节点选择
+
+# 抖音
 host, snssdk.com, direct
 host, amemv.com, direct
-host-suffix, time.is, direct
+
+# 网络测试
+host-keyword, speedtest, Speedtest
+host-suffix, ipify.org, Speedtest
+host-suffix, ipip.net, Speedtest
 host-suffix, ip-api.com, Speedtest
 host-suffix, test-ipv6.com, Speedtest
+host-suffix, speed.neu6.edu.cn, Speedtest
+
+# 苹果
 host-suffix, apple.com, Apple
 host-suffix, icloud.com, Apple
 host, gateway.icloud.com, Apple
 host, captive.apple.com, Apple
+
+# 微博
 host-suffix, weibocdn.com, 微博
 host-suffix, weibo.com, 微博
 host-suffix, weibo.cn, 微博
@@ -128,20 +152,112 @@ host-suffix, sinajs.cn, 微博
 host-suffix, sina.com.cn, 微博
 host-suffix, weather.com, 节点选择
 host-suffix, windy.com, 节点选择
-host-suffix, windows.com, 节点选择
+
+# 微软
+host-keyword, msft, 节点选择
+host-suffix, 1drv.com, 节点选择
+host-suffix, aadrm.com, 节点选择
+host-suffix, acompli.com, 节点选择
+host-suffix, acompli.net, 节点选择
+host-suffix, aka.ms, 节点选择
+host-suffix, akadns.net, 节点选择
+host-suffix, aspnetcdn.com, 节点选择
+host-suffix, assets-yammer.com, 节点选择
+host-suffix, azure.cn, 节点选择
+host-suffix, azure.com, 节点选择
+host-suffix, azure.net, 节点选择
+host-suffix, azureedge.net, 节点选择
+host-suffix, azurerms.com, 节点选择
+host-suffix, bing.com, 节点选择
+host-suffix, bing.net, 节点选择
+host-suffix, cloudapp.net, 节点选择
+host-suffix, cloudappsecurity.com, 节点选择
+host-suffix, docs.com, 节点选择
+host-suffix, edgesuite.net, 节点选择
+host-suffix, fabric.io, 节点选择
+host-suffix, gfx.ms, 节点选择
 host-suffix, hotmail.com, 节点选择
+host-suffix, live.com, 节点选择
+host-suffix, live.net, 节点选择
+host-suffix, livefilestore.com, 节点选择
+host-suffix, lync.com, 节点选择
+host-suffix, mesh.com, 节点选择
+host-suffix, microsoft-tst.com, 节点选择
+host-suffix, microsoft.com, 节点选择
+host-suffix, microsoftonline.com, 节点选择
+host-suffix, msappproxy.net, 节点选择
+host-suffix, msauth.net, 节点选择
+host-suffix, msauthimages.net, 节点选择
+host-suffix, msecnd.net, 节点选择
+host-suffix, msedge.net, 节点选择
+host-suffix, msft.net, 节点选择
+host-suffix, msftauth.net, 节点选择
+host-suffix, msftauthimages.net, 节点选择
+host-suffix, msftconnecttest.com, 节点选择
+host-suffix, msftidentity.com, 节点选择
+host-suffix, msidentity.com, 节点选择
+host-suffix, msn.com, 节点选择
+host-suffix, msocdn.com, 节点选择
+host-suffix, msocsp.com, 节点选择
+host-suffix, mstea.ms, 节点选择
+host-suffix, o365weve.com, 节点选择
+host-suffix, oaspapps.com, 节点选择
 host-suffix, office.com, 节点选择
 host-suffix, office.net, 节点选择
+host-suffix, office365.com, 节点选择
+host-suffix, officeppe.net, 节点选择
+host-suffix, omniroot.com, 节点选择
+host-suffix, onedrive.com, 节点选择
+host-suffix, onenote.com, 节点选择
+host-suffix, onenote.net, 节点选择
+host-suffix, onestore.ms, 节点选择
+host-suffix, onmicrosoft.com, 节点选择
+host-suffix, outlook.com, 节点选择
+host-suffix, outlookgroups.ms, 节点选择
+host-suffix, outlookmobile.com, 节点选择
+host-suffix, phonefactor.net, 节点选择
+host-suffix, public-trust.com, 节点选择
+host-suffix, s-microsoft.com, 节点选择
+host-suffix, sfbassets.com, 节点选择
+host-suffix, sfx.ms, 节点选择
+host-suffix, sharepoint.com, 节点选择
+host-suffix, sharepointonline.com, 节点选择
+host-suffix, skype.com, 节点选择
+host-suffix, skypeassets.com, 节点选择
+host-suffix, skypeforbusiness.com, 节点选择
+host-suffix, spoprod-a.akamaihd.net, 节点选择
+host-suffix, staffhub.ms, 节点选择
+host-suffix, svc.ms, 节点选择
+host-suffix, sway-cdn.com, 节点选择
+host-suffix, sway-extensions.com, 节点选择
+host-suffix, sway.com, 节点选择
+host-suffix, trafficmanager.net, 节点选择
+host-suffix, uservoice.com, 节点选择
+host-suffix, virtualearth.net, 节点选择
+host-suffix, visualstudio.com, 节点选择
+host-suffix, windows-ppe.net, 节点选择
+host-suffix, windows.com, 节点选择
 host-suffix, windows.net, 节点选择
-host-keyword, msft, 节点选择
-host-suffix, msauth.net, 节点选择
-host-suffix, live.com, 节点选择
+host-suffix, windowsazure.com, 节点选择
+host-suffix, windowsupdate.com, 节点选择
+host-suffix, wunderlist.com, 节点选择
+host-suffix, xbox.cn, 节点选择
+host-suffix, xbox.com, 节点选择
+host-suffix, xboxlive.cn, 节点选择
+host-suffix, xboxlive.com, 节点选择
+host-suffix, yammer.com, 节点选择
+host-suffix, yammerusercontent.com, 节点选择
+host-keyword, 1drv, 节点选择
 host-keyword, microsoft, 节点选择
+host-keyword, onedrive, 节点选择
+host-keyword, skydrive, 节点选择
+
 # 避免迅雷版权问题
 host, hub5idx.v6.shub.sandai.net, reject
 host, hub5emu.v6.shub.sandai.net, reject
 host, hub5btmain.v6.shub.sandai.net, reject
-# 私有
+
+# 私有地址
 host-suffix, local, direct
 host-suffix, *.local, direct
 ip-cidr, 10.0.0.0/8, direct
