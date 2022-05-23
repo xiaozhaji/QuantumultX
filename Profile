@@ -119,6 +119,7 @@ host-suffix, xiaozhaji.com, direct
 host-suffix, time.is, direct
 
 # 代理
+host, mtalk.google.com, 节点选择
 host-suffix, windy.com, 节点选择
 host-suffix, weather.com, 节点选择
 host-suffix, api.themoviedb.org, 节点选择
