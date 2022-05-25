@@ -76,10 +76,10 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
 ;👆️Trojan协议
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
 ;👆️SS协议
 
 https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=false, enabled=false
@@ -89,11 +89,11 @@ https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest,
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/Apple.list, tag=苹果服务, force-policy=Apple, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=国外网站, force-policy=国外网站, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=true, enabled=true
