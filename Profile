@@ -291,4 +291,4 @@ hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, -*.amemv.com, -*.
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中 生成证书 并安装&信任（💡请按确保照文字提示操作💡）
 skip_validating_cert = true
-force_sni_domain_name = true
+;force_sni_domain_name = true
