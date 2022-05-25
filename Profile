@@ -3,11 +3,12 @@
 ;general 模块内为一些通用的设置参数项
 [general]
 
+network_check_url =http://bing.com
 ;Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
 ;server_check_url=http://www.qualcomm.cn/generate_204
-;server_check_url=http://www.google-analytics.com/generate_204
+server_check_url=http://www.google.com/generate_204
 ;server_check_url=http://www.gstatic.com/generate_204
-server_check_url=http://www.apple.com/library/test/success.html
+;server_check_url=http://www.apple.com/library/test/success.html
 ;server_check_url=http://www.msftconnecttest.com/connecttest.txt
 ;server_check_url=http://cp.cloudflare.com
 
@@ -27,7 +28,10 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;UDP 白名单，留空则默认所有为端口。不在udp白名单列表中的端口，将被丢弃处理（返回 ICMP  “端口不可达” 信息）。
 udp_whitelist=1-442, 444-65535
 
-# 参数 fallback_udp_policy 的值仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
+;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
+udp_drop_list = 1900, 80
+
+#参数 fallback_udp_policy 的值仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
 fallback_udp_policy=direct
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
@@ -54,11 +58,9 @@ server=/*.miwifi.com/system
 
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/RIP.png
-static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+static=国外网站, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
 static=流媒体, 节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
-static=社交媒体, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Instagram.png
-static=广告拦截, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
+static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/RIP.png
 static=Apple, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 static=Speedtest, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png
 static=Final, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png
@@ -74,36 +76,28 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
 ;👆️Trojan协议
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fflowercloud.xyz%2Fmodules%2Fservers%2FV2raySocks%2Fosubscribe.php%3Fsid%3D4456%26token%3DJ7tm2QODmZRl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
 ;👆️SS协议
 
 https://youyuanbuzhi.com/subscription/quantumultx/c23e5e78-b39e-455f-92c8-7d8f6715dfcf, tag=一枝红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Skicat.png, update-interval=86400, opt-parser=false, enabled=false
 
 [filter_remote]
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/Apple.list, tag=苹果服务, force-policy=Apple, update-interval=86400, opt-parser=true, enabled=true
-https://limbopro.com/Adblock4limbo.list, tag=毒奶特供, force-policy=广告拦截, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=社交媒体, force-policy=社交媒体, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=国外网站, force-policy=国外网站, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 
 [rewrite_remote]
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=true, enabled=true
-https://limbopro.com/Adblock4limbo.conf, tag=毒奶特供, update-interval=86400, opt-parser=true, enabled=false
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TikTok美区, update-interval=86400, opt-parser=true, enabled=false
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, tag=VSCO破解, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=86400, opt-parser=true, enabled=false
-https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=true, enabled=false
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=true, enabled=false
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=true, enabled=false
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf, tag=NobyDa, update-interval=86400, opt-parser=true, enabled=false
 
 [server_local]
 
@@ -125,8 +119,8 @@ host-suffix, thetvdb.com, 节点选择
 host-suffix, assets.fanart.tv, 节点选择
 
 # 抖音
-host, snssdk.com, direct
-host, amemv.com, direct
+host-suffix, snssdk.com, direct
+host-suffix, amemv.com, direct
 
 # 网络测试
 host-keyword, speedtest, Speedtest
@@ -297,4 +291,4 @@ hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, -*.amemv.com, -*.
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中 生成证书 并安装&信任（💡请按确保照文字提示操作💡）
 skip_validating_cert = true
-force_sni_domain_name = false
+force_sni_domain_name = true
