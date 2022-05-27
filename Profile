@@ -7,8 +7,8 @@ network_check_url=http://bing.com
 ;Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
 ;server_check_url=http://www.qualcomm.cn/generate_204
 ;server_check_url=http://www.google.com/generate_204
-;server_check_url=http://www.gstatic.com/generate_204
-server_check_url=http://www.apple.com/library/test/success.html
+server_check_url=http://www.gstatic.com/generate_204
+;server_check_url=http://www.apple.com/library/test/success.html
 ;server_check_url=http://www.msftconnecttest.com/connecttest.txt
 ;server_check_url=http://cp.cloudflare.com
 
