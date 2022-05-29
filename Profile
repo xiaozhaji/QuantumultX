@@ -40,7 +40,7 @@ icmp_auto_reply=true
 
 [dns]
 ; 禁用系统 DNS（no-system） 以及 ipv6
-;no-ipv6
+no-ipv6
 no-system
 
 ;指定 dns 服务器，并发响应选取最优结果
