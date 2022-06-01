@@ -3,14 +3,17 @@
 ;general 模块内为一些通用的设置参数项
 [general]
 
-network_check_url=http://bing.com
+;Quantumult X 会对 network_check_url 指定的网址进行相应测试，以确认网络的可用性
+network_check_url=http://www.aliyun.com
+;network_check_url=http://www.bing.com
+
 ;Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
 ;server_check_url=http://www.qualcomm.cn/generate_204
 ;server_check_url=http://www.google.com/generate_204
 server_check_url=http://www.gstatic.com/generate_204
 ;server_check_url=http://www.apple.com/library/test/success.html
 ;server_check_url=http://www.msftconnecttest.com/connecttest.txt
-;server_check_url=http://cp.cloudflare.com
+;server_check_url=http://cp.cloudflare.com/generate_204
 
 ;节点延迟测试超时参数，需小于 5000 毫秒才生效
 ;server_check_timeout=500
