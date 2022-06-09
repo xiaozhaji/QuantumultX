@@ -153,7 +153,9 @@ host-suffix, aadrm.com, 节点选择
 host-suffix, acompli.com, 节点选择
 host-suffix, acompli.net, 节点选择
 host-suffix, aka.ms, 节点选择
-host-suffix, akadns.net, 节点选择
+host-suffix, windows.com.akadns.net, 节点选择
+host-suffix, microsoft.com.akadns.net, 节点选择
+host-suffix, microsoft.com.nsatc.net, 节点选择
 host-suffix, aspnetcdn.com, 节点选择
 host-suffix, assets-yammer.com, 节点选择
 host-suffix, azure.cn, 节点选择
