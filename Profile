@@ -30,10 +30,10 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目
 ;相关问题：如你遭遇 instagram 某些页面卡顿，可添加
-;udp_whitelist=53, 80-427, 444-65535
+;udp_whitelist=53, 80-427, 444-7999, 8001-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
-;udp_drop_list = 443
+;udp_drop_list=443, 8000
 
 ;说明：参数 fallback_udp_policy 的值仅支持末端策略（例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）
 ;当 UDP 请求经过规则模块以及策略模块后所命中的节点为 Quantumult X 所不支持 UDP 转发的节点（如：VMess、trojan），或支持 UDP 转发但未注明 udp-relay=true 的（例如：SS/SSR 且与服务器是否真实开启 UDP 转发无关），则 fallback_udp_policy 会被使用。该参数默认值为 reject
