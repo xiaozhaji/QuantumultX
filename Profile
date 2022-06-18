@@ -30,7 +30,8 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目
 ;相关问题：如你遭遇 instagram 某些页面卡顿，可添加
-udp_whitelist=53, 80-427, 444-7999, 8001-65535
+;udp_whitelist=1-442, 444-65535
+udp_whitelist=53, 123, 1900
 ;👇配合UDP Drop名单使用
 ;udp_whitelist=1-65535
 
