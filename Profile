@@ -86,8 +86,8 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 
-https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D4456%26token%3DgmGVpZKrqrrl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=172800, opt-parser=false, enabled=true
-https://youyuanbuzhi.com/subscription/quantumultx/3313822d-7562-47c4-a4bd-f51c0be7efc0, tag=红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=172800, opt-parser=false, enabled=false
+https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=172800, opt-parser=false, enabled=true
+https://youyuanbuzhi.com, tag=红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=172800, opt-parser=false, enabled=false
 
 [filter_remote]
 https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
