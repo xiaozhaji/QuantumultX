@@ -31,9 +31,6 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目
 ;相关问题：如你遭遇 instagram 某些页面卡顿，可添加
 udp_whitelist=1-442, 444-65535
-;udp_whitelist=53, 123
-;👇配合UDP Drop名单使用
-;udp_whitelist=1-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
 ;udp_drop_list=443
@@ -43,7 +40,6 @@ udp_whitelist=1-442, 444-65535
 ;相关问题：如游戏 udp 请求因为上述问题而无法加载，可自行调整
 fallback_udp_policy=direct
 # 注意：如果您需要调整该参数的值为 direct，请务必清楚了解同一目标主机名 TCP 请求与 UDP 请求的源地址不同所造成的隐私及安全风险
-
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
 excluded_routes=10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32
