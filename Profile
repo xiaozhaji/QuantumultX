@@ -82,10 +82,11 @@ static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加�
 
 [server_remote]
 
-https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=172800, opt-parser=false, enabled=true
-https://youyuanbuzhi.com, tag=红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=172800, opt-parser=false, enabled=false
+https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+https://youyuanbuzhi.com, tag=红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
 
 [filter_remote]
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
 https://youyuanbuzhi.com/Rules/QuantumultX/Filter/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=流媒体, force-policy=流媒体, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=国外网站, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
@@ -97,7 +98,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, tag=VSCO破解, update-interval=86400, opt-parser=false, enabled=true
-https://youyuanbuzhi.com/Rules/QuantumultX/Rewrite.conf, tag=Rewrite (神机规则), enabled=true
+https://youyuanbuzhi.com/Rules/QuantumultX/Rewrite.conf, tag=Rewrite (神机规则), update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
