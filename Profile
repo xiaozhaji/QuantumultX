@@ -66,6 +66,7 @@ server=/*.miwifi.com/system
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 static=国外网站, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
 static=流媒体, 节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
 static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/RIP.png
 static=Speedtest, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png
