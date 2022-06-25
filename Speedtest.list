@@ -1,7 +1,15 @@
-# Fast
-HOST-SUFFIX,fast.com,Speedtest
-
 # Speedtest by Ookla
 USER-AGENT,SpeedTest*,Speedtest
 HOST-KEYWORD,speedtest,Speedtest
 HOST-SUFFIX,ooklaserver.net,Speedtest
+
+# IP查询
+host-suffix, skk.moe, Speedtest
+host-suffix, ip.sb, Speedtest
+host-suffix, ipinfo.io, Speedtest
+host-suffix, ip138.com, Speedtest
+host-suffix, ipify.org, Speedtest
+host-suffix, ipip.net, Speedtest
+host-suffix, ip-api.com, Speedtest
+host-suffix, test-ipv6.com, Speedtest
+host-suffix, speed.neu6.edu.cn, Speedtest
