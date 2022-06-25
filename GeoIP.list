@@ -1,8 +1,8 @@
 #GeoIP库
-geoip, facebook, 节点选择
-geoip, twitter, 节点选择
-geoip, google, 节点选择
-geoip, telegram, 新加坡
+geoip, facebook, 国外网站
+geoip, twitter, 国外网站
+geoip, google, 国外网站
+geoip, telegram, Telegram
 geoip, netflix, NETFLIX
 geoip, us, 美国
 geoip, jp, 日本
