@@ -105,6 +105,7 @@ https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/vsco_crack.conf, 
 
 [filter_local]
 # 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
+final, 节点选择
 
 [rewrite_local]
 
