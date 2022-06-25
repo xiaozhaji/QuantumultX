@@ -10,4 +10,3 @@ geoip, hk, 香港
 geoip, tw, 台湾
 geoip, sg, 新加坡
 geoip, cn, direct
-final, 节点选择
