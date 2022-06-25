@@ -1,0 +1,31 @@
+# 直连
+host-keyword, synology, direct
+host-suffix, time.is, direct
+
+
+# 微博
+host-suffix, weibocdn.com, 微博
+host-suffix, weibo.com, 微博
+host-suffix, weibo.cn, 微博
+host-suffix, sinaimg.cn, 微博
+host-suffix, sinajs.cn, 微博
+host-suffix, sina.com.cn, 微博
+
+#天气
+host-suffix, weather.com, 节点选择
+host-suffix, windy.com, 节点选择
+
+#GEOIP库
+geoip, facebook, 节点选择
+geoip, google, 节点选择
+geoip, telegram, 节点选择
+geoip, netflix, 流媒体
+geoip, twitter, 节点选择
+geoip, us, 美国
+geoip, jp, 日本
+geoip, hk, 香港
+geoip, tw, 台湾
+geoip, sg, 新加坡
+geoip, private, direct
+geoip, cn, direct
+final, 节点选择
