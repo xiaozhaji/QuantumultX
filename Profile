@@ -86,14 +86,14 @@ https://youyuanbuzhi.com, tag=红杏, img-url=https://raw.githubusercontent.com/
 
 [filter_remote]
 
-https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Direct.list tag=直连列表, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/xiaozhaji/QuantumultX/raw/master/Weibo.list tag=微博, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Direct.list, tag=直连列表, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/xiaozhaji/QuantumultX/raw/master/Weibo.list, tag=微博, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Speedtest.list, tag=Speedtest, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/xiaozhaji/QuantumultX/raw/master/Proxy.list tag=代理列表, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Private.list tag=私有地址, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/xiaozhaji/QuantumultX/raw/master/Proxy.list, tag=代理列表, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Private.list, tag=私有地址, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, update-interval=86400, opt-parser=false, enabled=false
-https://github.com/xiaozhaji/QuantumultX/raw/master/GeoIP.list tag=GeoIP库, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/xiaozhaji/QuantumultX/raw/master/GeoIP.list, tag=GeoIP库, update-interval=86400, opt-parser=false, enabled=true
 
 [rewrite_remote]
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
