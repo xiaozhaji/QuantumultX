@@ -1,0 +1,12 @@
+geoip, facebook, 节点选择
+geoip, twitter, 节点选择
+geoip, google, 节点选择
+geoip, telegram, 节点选择
+geoip, netflix, NETFLIX
+geoip, us, 美国
+geoip, jp, 日本
+geoip, hk, 香港
+geoip, tw, 台湾
+geoip, sg, 新加坡
+geoip, cn, direct
+final, 节点选择
