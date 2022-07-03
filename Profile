@@ -53,9 +53,11 @@ excluded_routes=10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0
 ;icmp_auto_reply=true
 
 [dns]
-; 禁用系统 DNS（no-system）, ipv6 以及 DNS over HTTP/3
-no-ipv6
+; 禁用系统 DNS（no-system）, ipv6
 no-system
+no-ipv6
+
+;👇DNS over HTTP/3
 ;prefer-doh3
 
 ;指定 dns 服务器, 并发响应选取最优结果
@@ -65,7 +67,7 @@ server=119.29.29.29
 server=119.28.28.28
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
-doh-server=https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
+;doh-server=https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server = quic://dns-unfiltered.adguard.com
@@ -91,6 +93,7 @@ url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!�
 url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 static=其他国家, server-tag-regex=^((?!Traffic|Expire|香港|日本|新加坡|台湾|美国).)*$, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+
 [server_remote]
 https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
 https://youyuanbuzhi.com, tag=红杏, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
@@ -137,5 +140,5 @@ hostname = -*snssdk.com, -*amemv.com
 
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中 生成证书 并安装&信任（💡请按确保照文字提示操作💡）
-;skip_validating_cert = true
+skip_validating_cert = true
 ;force_sni_domain_name = true
