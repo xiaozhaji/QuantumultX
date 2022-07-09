@@ -3,3 +3,6 @@ host-keyword, synology, direct
 host-keyword, cctv, direct
 host-keyword, cntv, direct
 host-suffix, time.is, direct
+host, time.windows.com ,direct 
+host, time.apple.com ,direct 
+host, xiaozhaji.com ,direct
