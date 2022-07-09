@@ -4,7 +4,5 @@ HOST-KEYWORD,speedtest,Speedtest
 HOST-SUFFIX,ooklaserver.net,Speedtest
 
 # IP查询
-host-suffix, ip.sb, Speedtest
-host-suffix, ipify.org, Speedtest
 host-suffix, test-ipv6.com, Speedtest
 host-suffix, edu.cn, Speedtest
