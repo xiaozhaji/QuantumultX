@@ -1,4 +1,5 @@
 #直连列表
 host-keyword, synology, direct
 host-keyword, cctv, direct
+host-keyword, cntv, direct
 host-suffix, time.is, direct
