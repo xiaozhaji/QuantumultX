@@ -132,6 +132,7 @@ https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Filter/Extra
 
 [rewrite_remote]
 https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri.qxrewrite?raw=true, tag= iRingo for Siri & Search, update-interval=172800, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock@master/Quantumult-X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/app2smile/rules@master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/Rewrite_FakeSite.conf, tag=FakeSite, update-interval=86400, opt-parser=false, enabled=true
