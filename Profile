@@ -93,16 +93,17 @@ server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
 
 [policy]
-static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, direct, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
+static=Speedtest, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
+static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+static=国外网站, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
+static=NETFLIX, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+static=国际流媒体, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
+# 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
 url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Lab.png
-static=国外网站, 节点选择, direct, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-static=NETFLIX, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-# 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
-static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
-static=Speedtest, 节点选择, direct, reject, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
 url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
 url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
 url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
@@ -115,19 +116,19 @@ https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://cdn.jsdelivr.net/gh
 https://youyuanbuzhi.com, tag=红杏, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
 
 [filter_remote]
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/Unbreak.list, tag=规则修正, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Advertising/AdReject.list, tag=广告拦截, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Advertising/Hijacking.list, tag=劫持拦截, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/SNS/Telegram.list, tag=Telegram, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock@master/Quantumult-X/TikTok.list, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Media/ForeignMedia.list, tag=国际流媒体, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Proxy.list, tag=代理列表, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Region/Global.list, tag=国际网站/应用, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Speedtest.list, tag=Speedtest, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Weibo.list, tag=微博, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Direct.list, tag=直连列表, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Region/China.list, tag=国内网站/应用, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, update-interval=86400, opt-parser=false, enabled=false
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Advertising/AdReject.list, tag=广告拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Advertising/Hijacking.list, tag=劫持拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/SNS/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock@master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Media/ForeignMedia.list, tag=国际流媒体, force-policy=国际流媒体, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Proxy.list, tag=代理列表, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Region/Global.list, tag=国际网站/应用, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Weibo.list, tag=微博, force-policy=微博, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Direct.list, tag=直连列表, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Region/China.list, tag=国内网站/应用, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Filter/Extra/ChinaIP.list, tag=国内IP池, force-policy=direct, update-interval=86400, opt-parser=false, enabled=false
 
 [rewrite_remote]
 https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
