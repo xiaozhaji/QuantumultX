@@ -5,4 +5,5 @@ host-keyword, cntv, direct
 host-suffix, time.is, direct
 host, time.windows.com ,direct 
 host, time.apple.com ,direct 
+host-suffix, pool.ntp.org, direct
 host, xiaozhaji.com ,direct
