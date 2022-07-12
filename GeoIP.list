@@ -4,9 +4,9 @@ geoip, twitter, 国外网站
 geoip, google, 国外网站
 geoip, telegram, Telegram
 geoip, netflix, NETFLIX
-geoip, us, 节点选择
-geoip, jp, 节点选择
-geoip, hk, 节点选择
-geoip, tw, 节点选择
-geoip, sg, 节点选择
+geoip, us, 美国
+geoip, jp, 日本
+geoip, hk, 香港
+geoip, tw, 台湾
+geoip, sg, 新加坡
 geoip, cn, direct
