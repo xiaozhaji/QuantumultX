@@ -101,6 +101,7 @@ static=国外网站, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/K
 static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
 static=NETFLIX, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
 static=国际流媒体, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
+static=Final, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
 url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Lab.png
@@ -132,7 +133,7 @@ https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Filter/Extra
 
 [rewrite_remote]
 https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
-https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri.qxrewrite?raw=true, tag= iRingo for Siri & Search, update-interval=172800, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/VirgilClyne/iRingo@main/qxrewrite/Siri.qxrewrite, tag= iRingo for Siri & Search, update-interval=172800, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock@master/Quantumult-X/TikTok-JP.conf, tag=TikTok日区, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/app2smile/rules@master/module/spotify.conf, tag=Spotify破解, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rewrite/Rewrite_FakeSite.conf, tag=FakeSite, update-interval=86400, opt-parser=false, enabled=true
@@ -149,19 +150,8 @@ ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
-geoip, private, direct
-geoip, facebook, 国外网站
-geoip, twitter, 国外网站
-geoip, google, 国外网站
-geoip, telegram, Telegram
-geoip, netflix, NETFLIX
-geoip, us, 美国
-geoip, jp, 日本
-geoip, hk, 香港
-geoip, tw, 台湾
-geoip, sg, 新加坡
 geoip, cn, direct
-final, 节点选择
+final, Final
 
 [rewrite_local]
 
