@@ -1,3 +1,4 @@
+#修改自sve1r@https://github.com/sve1r/Rules-For-Quantumult-X/blob/develop/Rules/Services/SNS/Weibo.list
 # > Weibo
 host-keyword, weibo,  微博
 host-suffix, weibo.com,  微博
