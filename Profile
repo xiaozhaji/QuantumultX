@@ -165,8 +165,8 @@ final, 节点选择
 
 [task_local]
 event-interaction https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/traffic-check.js, tag=策略流量查询, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Download.png, enabled=true
-event-interaction https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/ytb-ui-check.js, tag=YouTube 查询, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube_Letter.png, enabled=true
-event-interaction https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png, enabled=true #img-url=arrowtriangle.right.square.system
+event-interaction https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/ytb-ui-check.js, tag=YouTube 查询, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png, enabled=true
+event-interaction https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png, enabled=true
 
 [http_backend]
 
