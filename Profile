@@ -60,12 +60,13 @@ no-system
 ;指定 dns 服务器, 并发响应选取最优结果
 server=223.5.5.5
 server=223.6.6.6
+server=1.12.12.12
 server=119.29.29.29
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
 prefer-doh3
-doh-server=https://223.5.5.5/dns-query, https://223.6.6.6/dns-query, https://1.12.12.12/dns-query
+doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
