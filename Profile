@@ -40,7 +40,7 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;udp_whitelist=1-442, 444-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
-;udp_drop_list=443
+udp_drop_list=1900, 443
 
 ;说明：参数 fallback_udp_policy 的值仅支持末端策略（例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）
 ;当 UDP 请求经过规则模块以及策略模块后所命中的节点为 Quantumult X 所不支持 UDP 转发的节点（如：VMess、trojan），或支持 UDP 转发但未注明 udp-relay=true 的（例如：SS/SSR 且与服务器是否真实开启 UDP 转发无关），则 fallback_udp_policy 会被使用。该参数默认值为 reject
@@ -49,50 +49,45 @@ fallback_udp_policy=direct
 # 注意：如果您需要调整该参数的值为 direct，请务必清楚了解同一目标主机名 TCP 请求与 UDP 请求的源地址不同所造成的隐私及安全风险
 
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
-excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 239.255.255.250/32
-;icmp_auto_reply=true
+excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 239.255.0.0/16
+icmp_auto_reply=true
 
 [dns]
 ; 禁用系统 DNS（no-system）, ipv6
 no-system
-no-ipv6
-
-;👇DNS over HTTP/3
-;prefer-doh3
+;no-ipv6
 
 ;指定 dns 服务器, 并发响应选取最优结果
-;server=223.5.5.5
-;server=223.6.6.6
-;server=119.29.29.29
-;server=182.254.116.116
-;server=180.76.76.76
-server=101.226.4.6
-server=1.2.4.8
+server=223.5.5.5
+server=223.6.6.6
+server=119.29.29.29
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
-;doh-server=https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
+;👇DNS over HTTP/3
+prefer-doh3
+doh-server=https://223.5.5.5/dns-query, https://223.6.6.6/dns-query, https://1.12.12.12/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
-;doq-server = quic://dns-unfiltered.adguard.com
+;doq-server=quic://dns-unfiltered.adguard.com
 
 ;指定域名解析dns, 下面为示范, 按需启用
 server=/miwifi.com/system
 server=/*.miwifi.com/system
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.alicdn.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.29.29.29
-server=/*.qq.com/119.29.29.29
-server=/*.tencent.com/119.29.29.29
-server=/*.weixin.com/119.29.29.29
-server=/*.bilibili.com/119.29.29.29
-server=/*.163.com/119.29.29.29
-server=/*.126.com/119.29.29.29
-server=/*.126.net/119.29.29.29
-server=/*.mi.com/119.29.29.29
-server=/*.xiaomi.com/119.29.29.29
+;server=/*.taobao.com/223.5.5.5
+;server=/*.tmall.com/223.5.5.5
+;server=/*.alipay.com/223.5.5.5
+;server=/*.alicdn.com/223.5.5.5
+;server=/*.aliyun.com/223.5.5.5
+;server=/*.jd.com/119.29.29.29
+;server=/*.qq.com/119.29.29.29
+;server=/*.tencent.com/119.29.29.29
+;server=/*.weixin.com/119.29.29.29
+;server=/*.bilibili.com/119.29.29.29
+;server=/*.163.com/119.29.29.29
+;server=/*.126.com/119.29.29.29
+;server=/*.126.net/119.29.29.29
+;server=/*.mi.com/119.29.29.29
+;server=/*.xiaomi.com/119.29.29.29
 
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
@@ -151,6 +146,7 @@ ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
+ip-cidr, 239.255.0.0/16, direct
 geoip, cn, direct
 final, Final
 
