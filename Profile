@@ -24,7 +24,7 @@ server_check_url=http://www.qualcomm.cn/generate_204
 ;server_check_url=http://cp.cloudflare.com/generate_204
 
 ;节点延迟测试超时参数，需小于 5000 毫秒才生效
-;server_check_timeout=1000
+;server_check_timeout=2000
 
 ;👍👍👍资源解析器，可用于自定义各类远程资源的转换，如节点，规则 filter，复写 rewrite 等，url 地址可远程，可 本地/iCloud(Quantumult X/Scripts目录);
 resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
@@ -66,7 +66,7 @@ server=119.29.29.29
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
 prefer-doh3
-doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+doh-server=https://dns.alidns.com/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
@@ -95,6 +95,7 @@ static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, �
 static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
 static=Speedtest, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
 static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+static=Microsoft, 节点选择, 0.2倍, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
 static=国外网站, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
 static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
 static=国际流媒体, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://cdn.jsdelivr.net/gh//Koolson/Qure@master/IconSet/Color/Netflix.png
@@ -121,6 +122,7 @@ https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Advertisi
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/SNS/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock@master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Media/ForeignMedia.list, tag=国际流媒体, force-policy=国际流媒体, update-interval=86400, opt-parser=false, enabled=true
+https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Microsoft.list, tag=Microsoft, force-policy=Microsoft, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Proxy.list, tag=代理列表, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Region/Global.list, tag=国际网站/应用, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
 https://cdn.jsdelivr.net/gh/xiaozhaji/QuantumultX@master/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
