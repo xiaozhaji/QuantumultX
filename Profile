@@ -60,14 +60,15 @@ no-system
 ;指定 dns 服务器, 并发响应选取最优结果
 server=223.5.5.5
 server=223.6.6.6
-server=1.12.12.12
 server=119.29.29.29
+server=119.28.28.28
+server=114.114.114.114
+
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
-prefer-doh3
-doh-server=https://dns.alidns.com/dns-query
-
+;prefer-doh3
+;doh-server=https://dns.alidns.com/dns-query
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
 
@@ -103,7 +104,7 @@ static=广告/劫持, 节点选择, direct, reject, img-url=https://cdn.jsdelivr
 static=Final, 节点选择, direct, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Lab.png
+static=0.2倍, server-tag-regex=(?=.*(实验性)), img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Lab.png
 url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
 url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
 url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
