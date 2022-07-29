@@ -40,7 +40,7 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;udp_whitelist=1-442, 444-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
-udp_drop_list=1900, 443
+udp_drop_list=1900
 
 ;说明：参数 fallback_udp_policy 的值仅支持末端策略（例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）
 ;当 UDP 请求经过规则模块以及策略模块后所命中的节点为 Quantumult X 所不支持 UDP 转发的节点（如：VMess、trojan），或支持 UDP 转发但未注明 udp-relay=true 的（例如：SS/SSR 且与服务器是否真实开启 UDP 转发无关），则 fallback_udp_policy 会被使用。该参数默认值为 reject
@@ -67,7 +67,7 @@ server=114.114.114.114
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
-;prefer-doh3
+prefer-doh3
 ;doh-server=https://dns.alidns.com/dns-query
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
@@ -173,5 +173,5 @@ hostname = -*snssdk.com, -*amemv.com
 
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中 生成证书 并安装&信任（💡请按确保照文字提示操作💡）
-;skip_validating_cert = true
+skip_validating_cert = true
 ;force_sni_domain_name = true
