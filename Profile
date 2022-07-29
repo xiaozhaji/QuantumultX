@@ -30,7 +30,8 @@ server_check_url=http://www.qualcomm.cn/generate_204
 resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
 
 ;👍👍geo_location_checker用于节点页面的节点信息展示，可完整自定义展示内容与方式
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN,https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_API.js
+;geo_location_checker=http://ip-api.com/json/?lang=zh-CN,https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_API.js
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
 
 ;dns exclusion list中的域名将不使用fake-ip方式. 其它域名则全部采用 fake-ip 及远程解析的模式
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.qq.com
@@ -55,7 +56,7 @@ icmp_auto_reply=true
 [dns]
 ; 禁用系统 DNS（no-system）, ipv6
 no-system
-;no-ipv6
+no-ipv6
 
 ;指定 dns 服务器, 并发响应选取最优结果
 server=223.5.5.5
@@ -68,13 +69,13 @@ server=114.114.114.114
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
 prefer-doh3
-;doh-server=https://dns.alidns.com/dns-query
+doh-server=https://dns.alidns.com/dns-query
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
 
 ;指定域名解析dns, 下面为示范, 按需启用
 server=/miwifi.com/system
-server=/*.miwifi.com/system
+server=/www.miwifi.com/system
 ;server=/*.taobao.com/223.5.5.5
 ;server=/*.tmall.com/223.5.5.5
 ;server=/*.alipay.com/223.5.5.5
@@ -113,8 +114,10 @@ url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|
 static=其他国家, server-tag-regex=^((?!Traffic|Expire|服务|香港|日本|新加坡|台湾|美国).)*$, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
 
 [server_remote]
-https://api.flowercloud.yt, tag=FlowerCloud, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
-https://youyuanbuzhi.com, tag=红杏, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
+https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D4456%26token%3DgmGVpZKrqrrl%26sip002%3D1, tag=FlowerCloud, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+;Trojan https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D4456%26token%3DgmGVpZKrqrrl
+;SS https://api.flowercloud.yt/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D4456%26token%3DgmGVpZKrqrrl%26sip002%3D1
+https://youyuanbuzhi.com/subscription/quantumultx/3313822d-7562-47c4-a4bd-f51c0be7efc0, tag=红杏, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
 
 [filter_remote]
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
