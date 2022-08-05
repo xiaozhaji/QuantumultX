@@ -36,6 +36,9 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://cdn.jsdelivr.ne
 ;dns exclusion list中的域名将不使用fake-ip方式. 其它域名则全部采用 fake-ip 及远程解析的模式
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.qq.com
 
+running_mode_trigger=filter, filter, JKM-WORKGROUP:all_direct, 506_5G:all_direct
+;上述写法，前两个 filter 先后表示 在 [数据蜂窝网络] 跟 [一般 Wi-Fi] 下，走 filter(分流)模式，后面则表示在特定 ssid 下切换为全局直连[all_direct] 或 全局代理[all_proxy]
+
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目
 ;相关问题：如你遭遇 instagram 某些页面卡顿，可添加
 ;udp_whitelist=1-442, 444-65535
