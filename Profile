@@ -31,7 +31,7 @@ resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scri
 
 ;👍👍geo_location_checker用于节点页面的节点信息展示，可完整自定义展示内容与方式
 ;geo_location_checker=http://ip-api.com/json/?lang=zh-CN,https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_API.js
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://cdn.jsdelivr.net/gh/Orz-3/Orz-3@master/QuantumultX/IP.js
 
 ;dns exclusion list中的域名将不使用fake-ip方式. 其它域名则全部采用 fake-ip 及远程解析的模式
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.qq.com
