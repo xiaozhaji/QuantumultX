@@ -36,7 +36,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://cdn.jsdelivr.ne
 ;dns exclusion list中的域名将不使用fake-ip方式. 其它域名则全部采用 fake-ip 及远程解析的模式
 dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.qq.com
 
-running_mode_trigger=filter, filter, JKM-WORKGROUP:all_direct, 506_5G:all_direct
+;running_mode_trigger=filter, filter, JKM-WORKGROUP:all_direct, 506_5G:all_direct
 ;上述写法，前两个 filter 先后表示 在 [数据蜂窝网络] 跟 [一般 Wi-Fi] 下，走 filter(分流)模式，后面则表示在特定 ssid 下切换为全局直连[all_direct] 或 全局代理[all_proxy]
 
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目
@@ -44,7 +44,7 @@ running_mode_trigger=filter, filter, JKM-WORKGROUP:all_direct, 506_5G:all_direct
 ;udp_whitelist=1-442, 444-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
-udp_drop_list=1900, 443, 8000
+udp_drop_list=443, 1900
 
 ;说明：参数 fallback_udp_policy 的值仅支持末端策略（例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）
 ;当 UDP 请求经过规则模块以及策略模块后所命中的节点为 Quantumult X 所不支持 UDP 转发的节点（如：VMess、trojan），或支持 UDP 转发但未注明 udp-relay=true 的（例如：SS/SSR 且与服务器是否真实开启 UDP 转发无关），则 fallback_udp_policy 会被使用。该参数默认值为 reject
@@ -55,6 +55,7 @@ udp_drop_list=1900, 443, 8000
 ;下列表中的内容将不经过 QuantumultX 的处理，设置后建议重启设备
 excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 239.255.0.0/16
 ;icmp_auto_reply=true
+
 
 [dns]
 ; 禁用系统 DNS（no-system）, ipv6
@@ -71,7 +72,7 @@ server=1.2.4.8
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
 ;prefer-doh3
-doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+;doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
 
@@ -116,11 +117,8 @@ url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|
 static=其他国家, server-tag-regex=^((?!Traffic|Expire|服务|香港|日本|新加坡|台湾|美国).)*$, img-url=https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
 
 [server_remote]
-https://api.flowercloud.yt, tag=FlowerCloud SS, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=false
-https://api.flowercloud.yt, tag=FlowerCloud TJ, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
-;Trojan https://api.flowercloud.yt
-;SS https://api.flowercloud.yt
-https://youyuanbuzhi.com, tag=红杏, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
+https://api.flowercloud.yt/sub?, tag=FlowerCloud SS, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
+https://youyuanbuzhi.com/subscription, tag=红杏, img-url=https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/Catnet.png, update-interval=86400, opt-parser=false, enabled=false
 
 [filter_remote]
 https://cdn.jsdelivr.net/gh/sve1r/Rules-For-Quantumult-X@develop/Rules/Services/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
@@ -151,6 +149,7 @@ https://cdn.jsdelivr.net/gh/zmqcherish/proxy-script@main/weibo.conf, tag=微博�
 [server_local]
 
 [filter_local]
+host-keyword, mtalk, 国外网站
 # 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
 # 绕过企业证书过期
 host, ocsp.apple.com, reject
@@ -183,5 +182,5 @@ hostname = -*snssdk.com, -*amemv.com
 
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中 生成证书 并安装&信任（💡请按确保照文字提示操作💡）
-skip_validating_cert = true
-force_sni_domain_name = true
+;skip_validating_cert = true
+;force_sni_domain_name = true
