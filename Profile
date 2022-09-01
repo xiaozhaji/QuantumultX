@@ -111,7 +111,7 @@ static=广告/劫持, 节点选择, direct, reject, img-url=https://raw.githubus
 static=Final, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Final.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Auto.png
-static=0.2倍, server-tag-regex=(?=.*(实验性)), img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Lab.png
+url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Lab.png
 url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Japan.png
