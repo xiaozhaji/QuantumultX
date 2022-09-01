@@ -102,7 +102,7 @@ static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, �
 static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Weibo.png
 static=Speedtest, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
 static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-static=Apple, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+static=Apple, 节点选择, 香港, 台湾, 日本, 新加坡, 美国, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
 static=Microsoft, 节点选择, 0.2倍, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 static=国外网站, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/TikTok.png
