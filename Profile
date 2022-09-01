@@ -167,7 +167,6 @@ https://raw.githubusercontents.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/
 
 [filter_local]
 # 本地分流规则(相同规则下，本地规则将覆盖远程规则，优先生效)
-# 绕过企业证书过期
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
