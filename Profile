@@ -101,8 +101,8 @@ server=/*.weixin.com/119.29.29.29
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Global.png
 static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Weibo.png
 static=Speedtest, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
-static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-static=Apple, 节点选择, 香港, 台湾, 日本, 新加坡, 美国, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, 🇸🇬 新加坡实验性 IEPL 中继 1, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+static=Apple, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, 🇺🇸 美国实验性 IEPL 中继 1, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
 static=Microsoft, 节点选择, 0.2倍, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 static=国外网站, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/TikTok.png
@@ -111,7 +111,7 @@ static=广告/劫持, 节点选择, direct, reject, img-url=https://raw.githubus
 static=Final, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Final.png
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
 url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Auto.png
-url-latency-benchmark=0.2倍, server-tag-regex=(?=.*(实验性)), check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Lab.png
+static=0.2倍, server-tag-regex=(?=.*(实验性)), img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Lab.png
 url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性|高级).)*$, check-interval=600, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Japan.png
