@@ -125,7 +125,7 @@ https://, tag=红杏, img-url=https://raw.githubusercontents.com/Orz-3/mini/mast
 
 [filter_remote]
 https://raw.githubusercontents.com/xiaozhaji/QuantumultX/master/Direct.list, tag=规则修正, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=广告拦截, force-policy=广告/劫持, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AdvertisingLite/AdvertisingLite.list, tag=广告拦截, force-policy=广告/劫持, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=国际流媒体, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=国际流媒体, update-interval=86400, opt-parser=false, enabled=true
@@ -139,14 +139,22 @@ https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/Quan
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TelegramUS/TelegramUS.list, tag=Telegram US, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TelegramSG/TelegramSG.list, tag=Telegram SG, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.Telegram.list, tag=Telegram ASN, force-policy=Telegram, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft, force-policy=Microsoft, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/xiaozhaji/QuantumultX/master/Speedtest.list, tag=Speedtest, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=国际网站/应用, force-policy=国外网站, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleDev/AppleDev.list, tag=AppleDev, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleFirmware/AppleFirmware.list, tag=AppleFirmware, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleHardware/AppleHardware.list, tag=AppleHardware, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleMail/AppleMail.list, tag=AppleMail, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleMedia/AppleMedia.list, tag=AppleMedia, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleProxy/AppleProxy.list, tag=AppleProxy, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleTV/AppleTV.list, tag=AppleTV, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/CCTV/CCTV.list, tag=CCTV, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/xiaozhaji/QuantumultX/master/Weibo.list, tag=微博, force-policy=微博, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=国内网站/应用, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontents.com/VirgilClyne/VirgilClyne/main/modules/ASN/ASN.China.list, tag=ASN.CHINA, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontents.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list, tag=ASN.CHINA, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPs/ChinaIPs.list, tag=国内IP池, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPsBGP/ChinaIPsBGP.list, tag=国内IP池BGP, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 
@@ -158,6 +166,7 @@ https://raw.githubusercontents.com/app2smile/rules/master/module/spotify.conf, t
 https://raw.githubusercontents.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/Rewrite_FakeSite.conf, tag=FakeSite, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/Rewrite_General.conf, tag=General, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, tag=百度网盘解锁清晰度, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.qxrewrite, tag=哔哩哔哩去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/zmqcherish/proxy-script/main/weibo.conf, tag=微博去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontents.com/ddgksf2013/Cuttlefish/master/Rewrite/AdBlock/StartUp.conf, tag=去开屏广告, update-interval=86400, opt-parser=false, enabled=true
