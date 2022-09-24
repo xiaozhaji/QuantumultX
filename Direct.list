@@ -1,5 +1,6 @@
 #规则修正
 host-keyword, synology, direct
+host-keyword, quickconnect, direct
 host-keyword, clash.razord.top, direct
 host-keyword, yacd.haishan.me, direct
 host-suffix, xiaozhaji.com, direct
