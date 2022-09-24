@@ -67,29 +67,29 @@ circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0
 circumvent-ipv6-answer = ::
 
 ;指定 dns 服务器, 并发响应选取最优结果
-server=223.6.6.6
-server=119.29.29.29
+;server=223.6.6.6
+;server=119.29.29.29
 
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
-;prefer-doh3
-;doh-server=https://dns.alidns.com/dns-query
+prefer-doh3
+doh-server=https://dns.alidns.com/dns-query
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
 
 ;指定域名解析dns, 下面为示范, 按需启用
 server=/miwifi.com/system
 server=/www.miwifi.com/system
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.alicdn.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.29.29.29
-server=/*.qq.com/119.29.29.29
-server=/*.tencent.com/119.29.29.29
-server=/*.weixin.com/119.29.29.29
+;server=/*.taobao.com/223.5.5.5
+;server=/*.tmall.com/223.5.5.5
+;server=/*.alipay.com/223.5.5.5
+;server=/*.alicdn.com/223.5.5.5
+;server=/*.aliyun.com/223.5.5.5
+;server=/*.jd.com/119.29.29.29
+;server=/*.qq.com/119.29.29.29
+;server=/*.tencent.com/119.29.29.29
+;server=/*.weixin.com/119.29.29.29
 ;server=/*.bilibili.com/119.29.29.29
 ;server=/*.163.com/119.29.29.29
 ;server=/*.126.com/119.29.29.29
@@ -101,9 +101,9 @@ server=/*.weixin.com/119.29.29.29
 static=节点选择, 自动选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, proxy, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Global.png
 static=微博, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Weibo.png
 static=Speedtest, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
-static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, 🇸🇬 新加坡实验性 IEPL 中继 1, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-static=Apple, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, 🇺🇸 美国实验性 IEPL 中继 1, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
-static=Microsoft, 节点选择, 0.2倍, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+static=Telegram, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, 🇭🇰 香港实验性 IEPL 中继 1, 🇯🇵 日本实验性 IEPL 中继 1, 🇸🇬 新加坡实验性 IEPL 中继 1, 🇺🇸 美国实验性 IEPL 中继 1, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+static=Apple, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, direct, 🇭🇰 香港实验性 IEPL 中继 1, 🇯🇵 日本实验性 IEPL 中继 1, 🇸🇬 新加坡实验性 IEPL 中继 1, 🇺🇸 美国实验性 IEPL 中继 1, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+static=Microsoft, 节点选择, 0.2倍, direct, 🇭🇰 香港实验性 IEPL 中继 1, 🇯🇵 日本实验性 IEPL 中继 1, 🇸🇬 新加坡实验性 IEPL 中继 1, 🇺🇸 美国实验性 IEPL 中继 1, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 static=国外网站, 节点选择, direct, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 static=TikTok, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/TikTok.png
 static=国际流媒体, 节点选择, 0.2倍, 香港, 台湾, 日本, 新加坡, 美国, 其他国家, img-url=https://raw.githubusercontents.com/Koolson/Qure/master/IconSet/Color/Netflix.png
