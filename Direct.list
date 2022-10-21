@@ -6,5 +6,6 @@ host-keyword, yacd.haishan.me, direct
 host-suffix, xiaozhaji.com, direct
 host-suffix, time.is, direct
 host-suffix, pool.ntp.org, direct
+host-suffix, gofile.me, direct
 host, time.windows.com, direct
 host, time.apple.com, direct
