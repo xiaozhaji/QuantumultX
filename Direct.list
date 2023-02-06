@@ -8,5 +8,6 @@ host-suffix, time.is, direct
 host-suffix, pool.ntp.org, direct
 host-suffix, gofile.me, direct
 host-suffix, ip-api.com, direct
+host-suffix, bcebos.com, direct
 host, time.windows.com, direct
 host, time.apple.com, direct
