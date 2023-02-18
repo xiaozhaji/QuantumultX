@@ -120,8 +120,8 @@ url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|
 url-latency-benchmark=其他国家, server-tag-regex=^((?!Traffic|Expire|服务|香港|日本|新加坡|台湾|美国).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
 [server_remote]
-https://api.huacloud.xyz/sub?target=quanx&list=true&emoji=true&tfo=true&udp=true&url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D4456%26token%3DgmGVpZKrqrrl%26sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=172800, opt-parser=false, enabled=true
-https://youyuanbuzhi.com/subscription/quantumultx/3313822d-7562-47c4-a4bd-f51c0be7efc0, tag=红杏, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=-1, opt-parser=false, enabled=true
+https://sip002%3D1, tag=FlowerCloud, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=172800, opt-parser=false, enabled=true
+https://f51c0be7efc0, tag=红杏, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=-1, opt-parser=false, enabled=true
 
 [filter_remote]
 https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Direct.list, tag=规则修正, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
