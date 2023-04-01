@@ -72,9 +72,9 @@ server=[2402:4e00::]
 ;👇DNS over HTTP/3
 prefer-doh3
 ;国内DoH服务器
-;doh-server=https://dns.alidns.com/dns-query, https://dns.pub/dns-query
+;doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
 ;国外DoH服务器
-doh-server=https://dns.google/dns-query, https://doh.dns.sb/dns-query, https://public.dns.iij.jp/dns-query
+doh-server=https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://doh.dns.sb/dns-query, https://public.dns.iij.jp/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
