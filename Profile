@@ -91,12 +91,7 @@ server=/www.miwifi.com/system
 ;server=/*.qq.com/119.29.29.29
 ;server=/*.tencent.com/119.29.29.29
 ;server=/*.weixin.com/119.29.29.29
-;server=/*.bilibili.com/223.5.5.5
-;server=/*.163.com/223.5.5.5
-;server=/*.126.com/223.5.5.5
-;server=/*.126.net/223.5.5.5
-;server=/*.mi.com/119.29.29.29
-;server=/*.xiaomi.com/119.29.29.29
+;server=/*.bilibili.com/119.29.29.29
 
 [policy]
 static=节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
