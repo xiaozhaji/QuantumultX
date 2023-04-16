@@ -37,7 +37,7 @@ dns_exclusion_list = *.lan, *?miwifi.com, ntp.*.com, time.*.com, ntp?.*.com, tim
 ;running_mode_trigger=filter, filter, JKM-WORKGROUP:all_direct, 506_5G:all_direct
 
 ;说明：参数 udp_whitelist 从 IP 层控制 UDP 数据是否需要舍弃；如舍弃，则该 UDP 请求不会进入规则模块以及策略模块，TCP/UDP 请求记录中也不会有相应的条目 ;相关问题：如你遭遇 instagram 某些页面卡顿，可添加
-;udp_whitelist=1-442, 444-65535
+udp_whitelist=1-442, 444-65535
 
 ;UDP Drop名单，同白名单类似，但不会返回 ICMP “端口不可达” 信息。drop 名单仅处理 whitelist名单中的端口
 ;udp_drop_list=1900, 443
@@ -55,7 +55,7 @@ excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 17.0.
 [dns]
 ; 禁用系统 DNS（no-system）, ipv6
 no-system
-no-ipv6
+;no-ipv6
 
 ;dns参数 circumvent-ipv4-answer/circumvent-ipv6-answer，用于过滤如 127.0.0.1/0.0.0.0 类可能被污染的返回结果
 circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0
@@ -70,11 +70,11 @@ server=[2402:4e00::]
 
 ;如指定 doh 服务, 则👆️上面的一般 dns 解析均失效
 ;👇DNS over HTTP/3
-prefer-doh3
+;prefer-doh3
 ;国内DoH服务器
 ;doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query
-;国外DoH服务器
-doh-server=https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://doh.dns.sb/dns-query, https://public.dns.iij.jp/dns-query
+;混合DoH服务器
+;doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query, https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, https://doh.dns.sb/dns-query, https://public.dns.iij.jp/dns-query
 
 ;DNS over QUIC, 可设置多个DNS并发, 默认端口为853, 指定 doq 服务时, 则👆️上面的 一般 dns 和 doh 解析均失效
 ;doq-server=quic://dns-unfiltered.adguard.com
@@ -82,65 +82,68 @@ doh-server=https://dns.google/dns-query, https://cloudflare-dns.com/dns-query, h
 ;指定域名解析dns, 下面为示范, 按需启用
 server=/miwifi.com/system
 server=/www.miwifi.com/system
-;server=/*.taobao.com/223.5.5.5
-;server=/*.tmall.com/223.5.5.5
-;server=/*.alipay.com/223.5.5.5
-;server=/*.alicdn.com/223.5.5.5
-;server=/*.aliyun.com/223.5.5.5
-;server=/*.jd.com/119.29.29.29
-;server=/*.qq.com/119.29.29.29
-;server=/*.tencent.com/119.29.29.29
-;server=/*.weixin.com/119.29.29.29
-;server=/*.bilibili.com/119.29.29.29
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.alicdn.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.sinaimg.cn/223.5.5.5
+server=/*.jd.com/119.29.29.29
+server=/*.qq.com/119.29.29.29
+server=/*.tencent.com/119.29.29.29
+server=/*.weixin.com/119.29.29.29
+server=/*.bilibili.com/119.29.29.29
 
 [policy]
-static=节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
-static=Telegram, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-static=TikTok, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
-static=国际流媒体, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-static=Twitter, 自动选择, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
-static=国外网站, 自动选择, 节点选择, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-static=Microsoft, 自动选择, 节点选择, 0.2倍, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
-static=Apple, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
-static=AppleTV, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, direct, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/AppleTV.png
-static=Weibo, 节点选择, 0.2倍, 台湾, 日本, 美国, 其他国家, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
-static=广告/劫持, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hijacking.png
-static=Final, 自动选择, 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-# 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
+static=节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png
+static=Telegram, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png
+static=Netflix, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+static=TikTok, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+static=OpenAI, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png
+static=Microsoft, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+static=Twitter, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+static=Global, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+static=Apple, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+static=AppleTV, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_TV.png
+static=Weibo, 节点选择, 自动选择, 0.2倍, 香港, 日本, 新加坡, 台湾, 美国, 高级节点, 其他国家, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
+static=广告/劫持, 节点选择, direct, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+static=Final, 节点选择, proxy, direct, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 static=0.2倍, server-tag-regex=(?=.*(实验性)), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png
-static=高级节点, server-tag-regex=(?=.*(高级)), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
-url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
-url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-url-latency-benchmark=其他国家, server-tag-regex=^((?!Traffic|Expire|服务|香港|日本|新加坡|台湾|美国).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+# 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差10ms以上则切换为最新的最低延迟节点，否则继续延用当前节点
+static=高级节点, server-tag-regex=(?=.*(高级)), img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png
+url-latency-benchmark=自动选择, server-tag-regex=^((?!Traffic|Expire|实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+url-latency-benchmark=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HK.png
+url-latency-benchmark=台湾, server-tag-regex=(?=.*(台湾|TW|(?i)Taiwan))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png
+url-latency-benchmark=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png
+url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
+url-latency-benchmark=美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!实验性|高级).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png
+url-latency-benchmark=其他国家, server-tag-regex=^((?!Traffic|Expire|服务|香港|日本|新加坡|台湾|美国).)*$, check-interval=300, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/UN.png
 
 [server_remote]
-#, tag=红墙, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Vpn.png, update-interval=172800, opt-parser=true, enabled=true
-#, tag=FlowerCloud, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Flower.png, update-interval=86400, opt-parser=false, enabled=true
-#, tag=红杏, img-url=https://raw.githubusercontents.com/Orz-3/mini/master/Alpha/Catnet.png, update-interval=-1, opt-parser=false, enabled=false
+
 
 [filter_remote]
-https://sub.xeton.dev/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=ACLSSR广告拦截, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=true
-https://sub.xeton.dev/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=4puUIOW6lOeUqOaLpuaIqg, tag=ACLSSR应用拦截, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=false
-https://limbopro.com/Adblock4limbo.list, tag=毒奶去网页广告计划, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=true
+https://sub.xeton.dev/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=ACLSSR广告拦截, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=false
+https://sub.xeton.dev/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=4puUIOW6lOeUqOaLpuaIqg, tag=ACLSSR应用拦截 慎用, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=false
+https://limbopro.com/Adblock4limbo.list, tag=毒奶去网页广告计划, force-policy=广告/劫持, update-interval=-1, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Direct.list, tag=规则修正, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=国际流媒体, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=国际流媒体, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=Netflix, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=Netflix, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleTV/AppleTV.list, tag=Apple TV, force-policy=AppleTV, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/ForeignMedia.list, tag=国际流媒体, force-policy=国际流媒体, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Proxy.list, tag=自定代理列表, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Sony/Sony.list, tag=Sony, force-policy=国外网站, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=国外网站, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list, tag=Github, force-policy=国外网站, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter, force-policy=Twitter, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/ForeignMedia.list, tag=国际流媒体, force-policy=Netflix, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/Proxy.list, tag=自定代理列表, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/OpenAI.snippet, tag=OpenAI, force-policy=OpenAI, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Instagram/Instagram.list, tag=Instagram, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Facebook/Facebook.list, tag=Facebook, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Sony/Sony.list, tag=Sony, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list, tag=Github, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft, force-policy=Microsoft, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=Apple, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=国际网站/应用, force-policy=国外网站, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=国际网站/应用, force-policy=Global, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/CCTV/CCTV.list, tag=CCTV, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Services/SNS/Weibo.list, tag=微博, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMax/ChinaMax.list, tag=国内网站/应用, force-policy=direct, update-interval=-1, opt-parser=false, enabled=true
@@ -156,10 +159,10 @@ https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lightroom.js, 
 https://raw.githubusercontent.com/xiaozhaji/QuantumultX/master/VSCO, tag=VSCO解锁, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri.qxrewrite, tag= iRingo for Siri & Search, update-interval=-1, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/Rewrite_General.conf, tag=General, update-interval=-1, opt-parser=false, enabled=true
-https://limbopro.com/Adblock4limbo.conf, tag=毒奶去网页广告计划, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/Weibo.conf, tag=微博去广告, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/WebAdBlock.conf, tag=影视网站去广告, update-interval=-1, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/Bilibili.conf, tag=BiliBili去广告, update-interval=-1, opt-parser=false, enabled=true
+https://limbopro.com/Adblock4limbo.conf, tag=毒奶去网页广告计划, update-interval=-1, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/Weibo.conf, tag=微博去广告, update-interval=-1, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/WebAdBlock.conf, tag=影视网站去广告, update-interval=-1, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rewrite/AdBlock/Bilibili.conf, tag=BiliBili去广告, update-interval=-1, opt-parser=false, enabled=false
 
 [server_local]
 
