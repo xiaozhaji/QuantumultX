@@ -1,8 +1,20 @@
 # 规则修正
+user-agent, SpeedTest*, direct
+
+host, time.windows.com, direct
+host, time.apple.com, direct
+host, xiaozhaji.myds.me, direct
+host, clash.razord.top, direct
+host, yacd.haishan.me, direct
+host, sydney.bing.com, direct
+host, tophub.today, direct
+host, ipv4.ddnspod.com, direct
+
 host-keyword, synology, direct
 host-keyword, quickconnect, direct
-user-agent, SpeedTest*, direct
 host-keyword, speedtest, direct
+host-keyword, aliyun, direct
+  
 host-suffix, baidu.com, direct
 host-suffix, bcebos.com, direct
 host-suffix, ooklaserver.net, direct
@@ -10,13 +22,37 @@ host-suffix, time.is, direct
 host-suffix, edu.cn, direct
 host-suffix, test-ipv6.com, direct
 host-suffix, gofile.me, direct
-host, time.windows.com, direct
-host, time.apple.com, direct
 host-suffix, xiaozhaji.com, direct
 host-suffix, pool.ntp.org, direct
 host-suffix, msftconnecttest.com, direct
 host-suffix, msftncsi.com, direct
-host-suffix, ip-api.com, direct
-host, clash.razord.top, direct
-host, yacd.haishan.me, direct
-host, sydney.bing.com, direct
+host-suffix, luciaz.me, direct
+host-suffix, ruanmei.com, direct
+host-suffix, 91sotu.com, direct
+host-suffix, momoyu.cc, direct
+host-suffix, qx121.com, direct
+host-suffix, qweather.com, direct
+host-suffix, qweather.net, direct
+host-suffix, ip138.com, direct
+host-suffix, xsool.com, direct
+host-suffix, ymtc.com, direct
+host-suffix, ones.ai, direct
+host-suffix, tlink.io, direct
+host-suffix, fkw.com, direct
+host-suffix, faiusr.com, direct
+host-suffix, faisys.com, direct
+host-suffix, 51yuansu.com, direct
+host-suffix, ibaotu.com, direct
+host-suffix, aigei.com, direct
+host-suffix, csvsc.com, direct
+host-suffix, lookae.com, direct
+host-suffix, didixk.com, direct
+host-suffix, gfxcamp.com, direct
+host-suffix, c4dsky.com, direct
+host-suffix, kujiale.com, direct
+host-suffix, dancf.com, direct
+host-suffix, zhongguose.com, direct
+host-suffix, eduwest.com, direct
+host-suffix, utv4d.com, direct
+host-suffix, btbat.com, direct
+host-suffix, lizhi.io, direct
