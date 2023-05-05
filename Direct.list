@@ -1,4 +1,33 @@
-# 规则修正
+#规则修正
+#代理
+host, receiptcheck.quantumult.app, 国外网站
+host, iosapps.itunes.apple.com, 国外网站
+host, updates.cdn-apple.com, 国外网站
+
+host-keyword, mtalk, 国外网站
+host-keyword, googleapis, 国外网站
+
+host-suffix, adtidy.org, 国外网站
+host-suffix, deepl.com, 国外网站
+host-suffix, weather.com, 国外网站
+host-suffix, windy.com, 国外网站
+host-suffix, gstatic.com, 国外网站
+host-suffix, doubleclick.net, 国外网站
+host-suffix, fanart.tv, 国外网站
+host-suffix, themoviedb.org, 国外网站
+host-suffix, tmdb.org, 国外网站
+host-suffix, thetvdb.com, 国外网站
+host-suffix, omdbapi.com, 国外网站
+host-suffix, nvidia.com, 国外网站
+host-suffix, nvidia.cn, 国外网站
+host-suffix, geforce.com, 国外网站
+host-suffix, geforce.cn, 国外网站
+host-suffix, bing.com, 国外网站
+host-suffix, ndmdhs.com, 国外网站
+host-suffix, openai.com, 国外网站
+
+
+#直连
 user-agent, SpeedTest*, direct
 
 host, time.windows.com, direct
@@ -56,3 +85,5 @@ host-suffix, eduwest.com, direct
 host-suffix, utv4d.com, direct
 host-suffix, btbat.com, direct
 host-suffix, lizhi.io, direct
+host-suffix, snssdk.com, direct
+host-suffix, amemv.com, direct
