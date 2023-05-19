@@ -3,6 +3,8 @@
 host, receiptcheck.quantumult.app, Global
 host, iosapps.itunes.apple.com, Global
 host, updates.cdn-apple.com, Global
+host, speedtest-univ-results-api.speedtest.net, Global
+host, user-api.speedtest.net, Global
 
 host-keyword, mtalk, Global
 host-keyword, googleapis, Global
@@ -25,6 +27,7 @@ host-suffix, geforce.cn, Global
 host-suffix, bing.com, Global
 host-suffix, ndmdhs.com, Global
 host-suffix, openai.com, Global
+host-suffix, itunes.apple.com, Global
 
 
 #直连
