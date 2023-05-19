@@ -26,7 +26,7 @@ host-suffix, geforce.com, Global
 host-suffix, geforce.cn, Global
 host-suffix, bing.com, Global
 host-suffix, ndmdhs.com, Global
-host-suffix, openai.com, Global
+;host-suffix, openai.com, Global
 host-suffix, itunes.apple.com, Global
 
 
