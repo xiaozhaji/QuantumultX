@@ -8,6 +8,7 @@ host, user-api.speedtest.net, Global
 
 host-keyword, mtalk, Global
 host-keyword, googleapis, Global
+host-keyword, openai, Global
 
 host-suffix, adtidy.org, Global
 host-suffix, deepl.com, Global
