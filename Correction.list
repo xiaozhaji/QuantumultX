@@ -88,8 +88,8 @@ host-suffix, eduwest.com, direct
 host-suffix, utv4d.com, direct
 host-suffix, btbat.com, direct
 host-suffix, lizhi.io, direct
-host-suffix, snssdk.com, direct
-host-suffix, amemv.com, direct
+;host-suffix, snssdk.com, direct
+;host-suffix, amemv.com, direct
 host-suffix, codelife.cc, direct
 host-suffix, xiayigejiaqi.com, direct
 host-suffix, ipchaxun.net, direct
