@@ -27,7 +27,6 @@ host-suffix, geforce.com, Global
 host-suffix, geforce.cn, Global
 host-suffix, bing.com, Global
 host-suffix, ndmdhs.com, Global
-;host-suffix, openai.com, Global
 host-suffix, itunes.apple.com, Global
 
 
@@ -89,6 +88,7 @@ host-suffix, eduwest.com, direct
 host-suffix, utv4d.com, direct
 host-suffix, btbat.com, direct
 host-suffix, lizhi.io, direct
+host-suffix, douyin.com, direct
 host-suffix, douyincdn.com, direct
 host-suffix, douyinvod.com, direct
 host-suffix, douyinpic.com, direct
