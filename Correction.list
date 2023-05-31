@@ -9,7 +9,6 @@ host, sydney.bing.com, 高级节点
 
 host-keyword, mtalk, Global
 host-keyword, googleapis, Global
-host-keyword, openai, OpenAI
 
 host-suffix, adtidy.org, Global
 host-suffix, deepl.com, Global
