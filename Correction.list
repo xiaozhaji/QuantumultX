@@ -2,6 +2,8 @@
 #拒绝
 host, o33249.ingest.sentry.io, 广告/劫持
 
+host-suffix, sentry.io, 广告/劫持
+
 #代理
 host, receiptcheck.quantumult.app, Global
 host, iosapps.itunes.apple.com, Global
