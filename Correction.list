@@ -5,33 +5,33 @@ host, o33249.ingest.sentry.io, 广告/劫持
 host-suffix, sentry.io, 广告/劫持
 
 #代理
-host, receiptcheck.quantumult.app, Global
-host, iosapps.itunes.apple.com, Global
-host, updates.cdn-apple.com, Global
-host, speedtest-univ-results-api.speedtest.net, Global
-host, user-api.speedtest.net, Global
+host, receiptcheck.quantumult.app, 节点选择
+host, iosapps.itunes.apple.com, 节点选择
+host, updates.cdn-apple.com, 节点选择
+host, speedtest-univ-results-api.speedtest.net, 节点选择
+host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, OpenAI
-host-keyword, mtalk, Global
-host-keyword, googleapis, Global
+host-keyword, mtalk, 节点选择
+host-keyword, googleapis, 节点选择
 
-host-suffix, adtidy.org, Global
-host-suffix, deepl.com, Global
-host-suffix, weather.com, Global
-host-suffix, windy.com, Global
-host-suffix, gstatic.com, Global
-host-suffix, doubleclick.net, Global
-host-suffix, fanart.tv, Global
-host-suffix, themoviedb.org, Global
-host-suffix, tmdb.org, Global
-host-suffix, thetvdb.com, Global
-host-suffix, omdbapi.com, Global
-host-suffix, nvidia.com, Global
-host-suffix, nvidia.cn, Global
-host-suffix, geforce.com, Global
-host-suffix, geforce.cn, Global
-host-suffix, bing.com, Global
-host-suffix, ndmdhs.com, Global
-host-suffix, itunes.apple.com, Global
+host-suffix, adtidy.org, 节点选择
+host-suffix, deepl.com, 节点选择
+host-suffix, weather.com, 节点选择
+host-suffix, windy.com, 节点选择
+host-suffix, gstatic.com, 节点选择
+host-suffix, doubleclick.net, 节点选择
+host-suffix, fanart.tv, 节点选择
+host-suffix, themoviedb.org, 节点选择
+host-suffix, tmdb.org, 节点选择
+host-suffix, thetvdb.com, 节点选择
+host-suffix, omdbapi.com, 节点选择
+host-suffix, nvidia.com, 节点选择
+host-suffix, nvidia.cn, 节点选择
+host-suffix, geforce.com, 节点选择
+host-suffix, geforce.cn, 节点选择
+host-suffix, bing.com, 节点选择
+host-suffix, ndmdhs.com, 节点选择
+host-suffix, itunes.apple.com, 节点选择
 
 #直连
 user-agent, SpeedTest*, direct
