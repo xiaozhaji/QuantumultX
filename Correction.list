@@ -112,8 +112,8 @@ host-keyword, normal-c-lq,IP
 host-keyword, normal-lq,IP
 host-keyword, search-quic-lq,IP
 host-keyword, search-lq,IP
-host-suffix, zijieapi.com,IP
-host-suffix, ecombdapi.com,IP
+host-suffix, zijieapi.com,direct
+host-suffix, ecombdapi.com,direct
 host-keyword, -normal-hl,IP
 host-keyword, -normal-c-hl,IP
 host-keyword, -core-c-hl,IP
