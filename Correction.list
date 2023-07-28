@@ -10,7 +10,7 @@ host, iosapps.itunes.apple.com, 节点选择
 host, updates.cdn-apple.com, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
-host, sydney.bing.com, OpenAI
+host, sydney.bing.com, 节点选择
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 
