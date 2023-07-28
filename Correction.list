@@ -11,6 +11,9 @@ host, updates.cdn-apple.com, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 节点选择
+host, bard.google.com, 节点选择
+host, tosv.byted.org, 家宽
+
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 
@@ -32,6 +35,7 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, itunes.apple.com, 节点选择
+host-suffix, tiktokv.com, 家宽
 
 #直连
 user-agent, SpeedTest*, direct
