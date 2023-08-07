@@ -104,6 +104,11 @@ host-suffix, ladydaily.com, direct
 host-suffix, lusun.com, direct
 host-suffix, weixinbridge.com, direct
 
+#IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
+#抖音
+host-suffix, snssdk.com,IP
+host-suffix, amemv.com,IP
+
 #GEOIP
 geoip, cn, direct
 geoip, ae, 欧洲
@@ -148,8 +153,3 @@ geoip, google, 节点选择
 geoip, netflix, 流媒体
 geoip, telegram, 节点选择
 geoip, twitter, 节点选择
-
-#IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
-#抖音
-host-suffix, snssdk.com,IP
-host-suffix, amemv.com,IP
