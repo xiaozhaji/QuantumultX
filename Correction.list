@@ -1,8 +1,8 @@
 #规则修正
 #拒绝
-host, o33249.ingest.sentry.io, 广告/劫持
+host, o33249.ingest.sentry.io, reject
 
-host-suffix, sentry.io, 广告/劫持
+host-suffix, sentry.io, reject
 
 #代理
 host, receiptcheck.quantumult.app, 节点选择
