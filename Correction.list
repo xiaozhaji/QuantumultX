@@ -1,10 +1,10 @@
-#规则修正
-#拒绝
+# 规则修正
+# 拒绝
 host, o33249.ingest.sentry.io, reject
 
 host-suffix, sentry.io, reject
 
-#代理
+# 代理
 host, receiptcheck.quantumult.app, 节点选择
 host, iosapps.itunes.apple.com, 节点选择
 host, updates.cdn-apple.com, 节点选择
@@ -37,7 +37,7 @@ host-suffix, ndmdhs.com, 节点选择
 host-suffix, itunes.apple.com, 节点选择
 host-suffix, tiktokv.com, 家宽
 
-#直连
+# 直连
 user-agent, SpeedTest*, direct
 
 host, time.windows.com, direct
@@ -104,7 +104,7 @@ host-suffix, ladydaily.com, direct
 host-suffix, lusun.com, direct
 host-suffix, weixinbridge.com, direct
 
-#IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
-#抖音
+# IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
+# 抖音
 host-suffix, snssdk.com,IP
 host-suffix, amemv.com,IP
