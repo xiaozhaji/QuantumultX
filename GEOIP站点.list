@@ -1,0 +1,10 @@
+#GEOIP站点
+geoip, netflix, 流媒体
+geoip, facebook, 节点选择
+geoip, google, 节点选择
+geoip, telegram, 节点选择
+geoip, twitter, 节点选择
+geoip, fastly, 节点选择
+geoip, cloudflare, 节点选择
+geoip, cloudfront, 节点选择
+
