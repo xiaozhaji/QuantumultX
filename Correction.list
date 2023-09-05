@@ -12,7 +12,6 @@ host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 节点选择
 host, bard.google.com, 节点选择
-host, tosv.byted.org, 家宽
 
 ;host-keyword, mtalk, 节点选择
 ;host-keyword, googleapis, 节点选择
@@ -48,6 +47,7 @@ host, yacd.haishan.me, direct
 host, tophub.today, direct
 host, ipv4.ddnspod.com, direct
 host, pv.sohu.com, direct
+host, tosv.byted.org, direct
 
 host-keyword, synology, direct
 host-keyword, quickconnect, direct
