@@ -10,81 +10,82 @@ geoip,us,美国
 
 # ⬇️东亚
 
-geoip,kp,亚洲
-geoip,mn,亚洲
+geoip,kp,韩国
+geoip,mn,韩国
 
 # ⬇️东南亚
 
-geoip,mo,亚洲
-geoip,la,亚洲
-geoip,mm,亚洲
-geoip,id,亚洲
-geoip,my,亚洲
-geoip,ph,亚洲
-geoip,th,亚洲
-geoip,tl,亚洲
-geoip,vn,亚洲
+geoip,mo,香港
+geoip,la,香港
+geoip,mm,香港
+geoip,vn,香港
+geoip,th,香港
+geoip,ph,新加坡
+geoip,id,新加坡
+geoip,my,新加坡
+geoip,tl,新加坡
+
 
 
 # ⬇️南亚
 
-geoip,bd,亚洲
-geoip,bn,亚洲
-geoip,bt,亚洲
-geoip,cc,亚洲
-geoip,cx,亚洲
-geoip,in,亚洲
-geoip,kh,亚洲
-geoip,lk,亚洲
-geoip,mv,亚洲
-geoip,np,亚洲
+geoip,bd,新加坡
+geoip,bn,新加坡
+geoip,bt,新加坡
+geoip,cc,新加坡
+geoip,cx,新加坡
+geoip,in,新加坡
+geoip,kh,新加坡
+geoip,lk,新加坡
+geoip,mv,新加坡
+geoip,np,新加坡
 
 # ⬇️中亚
 
-geoip,kg,亚洲
-geoip,kz,亚洲
-geoip,pk,亚洲
-geoip,tm,亚洲
-geoip,tj,亚洲
-geoip,uz,亚洲
+geoip,kg,欧洲
+geoip,kz,欧洲
+geoip,pk,欧洲
+geoip,tm,欧洲
+geoip,tj,欧洲
+geoip,uz,欧洲
 
 
 # ⬇️西亚
 
-geoip,af,亚洲
-geoip,az,亚洲
-geoip,bh,亚洲
-geoip,il,亚洲
-geoip,ir,亚洲
-geoip,iq,亚洲
-geoip,jo,亚洲
-geoip,kw,亚洲
-geoip,lb,亚洲
-geoip,om,亚洲
-geoip,qa,亚洲
-geoip,sa,亚洲
-geoip,sy,亚洲
-geoip,ye,亚洲
+geoip,af,欧洲
+geoip,az,欧洲
+geoip,bh,欧洲
+geoip,il,欧洲
+geoip,ir,欧洲
+geoip,iq,欧洲
+geoip,jo,欧洲
+geoip,kw,欧洲
+geoip,lb,欧洲
+geoip,om,欧洲
+geoip,qa,欧洲
+geoip,sa,欧洲
+geoip,sy,欧洲
+geoip,ye,欧洲
 
 # ⬇️大洋洲
 
-geoip,au,大洋洲
-geoip,ck,大洋洲
-geoip,fj,大洋洲
-geoip,fm,大洋洲
-geoip,gu,大洋洲
-geoip,ki,大洋洲
-geoip,mh,大洋洲
-geoip,nr,大洋洲
-geoip,nu,大洋洲
-geoip,nz,大洋洲
-geoip,pw,大洋洲
-geoip,pg,大洋洲
-geoip,pn,大洋洲
-geoip,sb,大洋洲
-geoip,to,大洋洲
-geoip,tv,大洋洲
-geoip,vu,大洋洲
+geoip,au,新加坡
+geoip,ck,新加坡
+geoip,fj,新加坡
+geoip,fm,新加坡
+geoip,gu,新加坡
+geoip,ki,新加坡
+geoip,mh,新加坡
+geoip,nr,新加坡
+geoip,nu,新加坡
+geoip,nz,新加坡
+geoip,pw,新加坡
+geoip,pg,新加坡
+geoip,pn,新加坡
+geoip,sb,新加坡
+geoip,to,新加坡
+geoip,tv,新加坡
+geoip,vu,新加坡
 
 # ⬇️欧洲
 
@@ -138,67 +139,67 @@ geoip,uk,欧洲
 
 # ⬇️北美洲
 
-geoip,ca,北美洲
-geoip,mx,北美洲
-geoip,tt,北美洲
+geoip,ca,美国
+geoip,mx,美国
+geoip,tt,美国
 
 # ⬇️南美洲
 
-geoip,ar,南美洲
-geoip,bo,南美洲
-geoip,br,南美洲
-geoip,cl,南美洲
-geoip,co,南美洲
-geoip,ec,南美洲
-geoip,gf,南美洲
-geoip,gy,南美洲
-geoip,pe,南美洲
+geoip,ar,美国
+geoip,bo,美国
+geoip,br,美国
+geoip,cl,美国
+geoip,co,美国
+geoip,ec,美国
+geoip,gf,美国
+geoip,gy,美国
+geoip,pe,美国
 
 # ⬇️非洲
 
-geoip,ao,非洲
-geoip,bj,非洲
-geoip,bw,非洲
-geoip,cd,非洲
-geoip,cg,非洲
-geoip,ci,非洲
-geoip,cm,非洲
-geoip,dz,非洲
-geoip,eg,非洲
-geoip,gq,非洲
-geoip,ga,非洲
-geoip,gm,非洲
-geoip,gh,非洲
-geoip,gn,非洲
-geoip,gw,非洲
-geoip,ke,非洲
-geoip,ls,非洲
-geoip,lr,非洲
-geoip,ly,非洲
-geoip,ma,非洲
-geoip,mg,非洲
-geoip,ml,非洲
-geoip,mr,非洲
-geoip,mw,非洲
-geoip,mz,非洲
-geoip,na,非洲
-geoip,ne,非洲
-geoip,ng,非洲
-geoip,rw,非洲
-geoip,sc,非洲
-geoip,sd,非洲
-geoip,sl,非洲
-geoip,so,非洲
-geoip,sn,非洲
-geoip,st,非洲
-geoip,sz,非洲
-geoip,tg,非洲
-geoip,tn,非洲
-geoip,tz,非洲
-geoip,ug,非洲
-geoip,za,非洲
-geoip,zw,非洲
+geoip,ao,欧洲
+geoip,bj,欧洲
+geoip,bw,欧洲
+geoip,cd,欧洲
+geoip,cg,欧洲
+geoip,ci,欧洲
+geoip,cm,欧洲
+geoip,dz,欧洲
+geoip,eg,欧洲
+geoip,gq,欧洲
+geoip,ga,欧洲
+geoip,gm,欧洲
+geoip,gh,欧洲
+geoip,gn,欧洲
+geoip,gw,欧洲
+geoip,ke,欧洲
+geoip,ls,欧洲
+geoip,lr,欧洲
+geoip,ly,欧洲
+geoip,ma,欧洲
+geoip,mg,欧洲
+geoip,ml,欧洲
+geoip,mr,欧洲
+geoip,mw,欧洲
+geoip,mz,欧洲
+geoip,na,欧洲
+geoip,ne,欧洲
+geoip,ng,欧洲
+geoip,rw,欧洲
+geoip,sc,欧洲
+geoip,sd,欧洲
+geoip,sl,欧洲
+geoip,so,欧洲
+geoip,sn,欧洲
+geoip,st,欧洲
+geoip,sz,欧洲
+geoip,tg,欧洲
+geoip,tn,欧洲
+geoip,tz,欧洲
+geoip,ug,欧洲
+geoip,za,欧洲
+geoip,zw,欧洲
 
 # ⬇️南极洲
 
-geoip,aq,南极洲
+geoip,aq,新加坡
