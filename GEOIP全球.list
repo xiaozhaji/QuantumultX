@@ -63,73 +63,6 @@ geoip,uz,亚洲
 geoip,vn,亚洲
 geoip,ye,亚洲
 
-# ⬇️非洲
-
-geoip,ao,非洲
-geoip,bj,非洲
-geoip,bw,非洲
-geoip,bw,非洲
-geoip,cm,非洲
-geoip,cd,非洲
-geoip,cg,非洲
-geoip,ci,非洲
-geoip,cm,非洲
-geoip,dz,非洲
-geoip,eg,非洲
-geoip,gq,非洲
-geoip,ga,非洲
-geoip,gm,非洲
-geoip,gh,非洲
-geoip,gn,非洲
-geoip,gw,非洲
-geoip,ke,非洲
-geoip,ls,非洲
-geoip,lr,非洲
-geoip,ly,非洲
-geoip,ma,非洲
-geoip,mg,非洲
-geoip,ml,非洲
-geoip,mr,非洲
-geoip,mw,非洲
-geoip,mz,非洲
-geoip,na,非洲
-geoip,ne,非洲
-geoip,ng,非洲
-geoip,rw,非洲
-geoip,sc,非洲
-geoip,sd,非洲
-geoip,sl,非洲
-geoip,so,非洲
-geoip,za,非洲
-geoip,sn,非洲
-geoip,st,非洲
-geoip,sz,非洲
-geoip,tg,非洲
-geoip,tn,非洲
-geoip,ug,非洲
-geoip,tz,非洲
-geoip,ug,非洲
-geoip,za,非洲
-geoip,zw,非洲
-
-# ⬇️北美洲
-
-geoip,ca,北美洲
-geoip,mx,北美洲
-geoip,us,北美洲
-
-# ⬇️南美洲
-
-geoip,ar,南美洲
-geoip,bo,南美洲
-geoip,br,南美洲
-geoip,cl,南美洲
-geoip,co,南美洲
-geoip,ec,南美洲
-geoip,gf,南美洲
-geoip,gy,南美洲
-geoip,pe,南美洲
-
 # ⬇️大洋洲
 
 geoip,au,大洋洲
@@ -196,6 +129,73 @@ geoip,sk,欧洲
 geoip,tr,欧洲
 geoip,ua,欧洲
 geoip,uk,欧洲
+
+# ⬇️非洲
+
+geoip,ao,非洲
+geoip,bj,非洲
+geoip,bw,非洲
+geoip,bw,非洲
+geoip,cm,非洲
+geoip,cd,非洲
+geoip,cg,非洲
+geoip,ci,非洲
+geoip,cm,非洲
+geoip,dz,非洲
+geoip,eg,非洲
+geoip,gq,非洲
+geoip,ga,非洲
+geoip,gm,非洲
+geoip,gh,非洲
+geoip,gn,非洲
+geoip,gw,非洲
+geoip,ke,非洲
+geoip,ls,非洲
+geoip,lr,非洲
+geoip,ly,非洲
+geoip,ma,非洲
+geoip,mg,非洲
+geoip,ml,非洲
+geoip,mr,非洲
+geoip,mw,非洲
+geoip,mz,非洲
+geoip,na,非洲
+geoip,ne,非洲
+geoip,ng,非洲
+geoip,rw,非洲
+geoip,sc,非洲
+geoip,sd,非洲
+geoip,sl,非洲
+geoip,so,非洲
+geoip,za,非洲
+geoip,sn,非洲
+geoip,st,非洲
+geoip,sz,非洲
+geoip,tg,非洲
+geoip,tn,非洲
+geoip,ug,非洲
+geoip,tz,非洲
+geoip,ug,非洲
+geoip,za,非洲
+geoip,zw,非洲
+
+# ⬇️北美洲
+
+geoip,ca,北美洲
+geoip,mx,北美洲
+geoip,us,北美洲
+
+# ⬇️南美洲
+
+geoip,ar,南美洲
+geoip,bo,南美洲
+geoip,br,南美洲
+geoip,cl,南美洲
+geoip,co,南美洲
+geoip,ec,南美洲
+geoip,gf,南美洲
+geoip,gy,南美洲
+geoip,pe,南美洲
 
 # ⬇️南极洲
 
