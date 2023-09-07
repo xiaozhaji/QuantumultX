@@ -136,6 +136,24 @@ geoip,tr,欧洲
 geoip,ua,欧洲
 geoip,uk,欧洲
 
+# ⬇️北美洲
+
+geoip,ca,北美洲
+geoip,mx,北美洲
+geoip,tt,北美洲
+
+# ⬇️南美洲
+
+geoip,ar,南美洲
+geoip,bo,南美洲
+geoip,br,南美洲
+geoip,cl,南美洲
+geoip,co,南美洲
+geoip,ec,南美洲
+geoip,gf,南美洲
+geoip,gy,南美洲
+geoip,pe,南美洲
+
 # ⬇️非洲
 
 geoip,ao,非洲
@@ -180,24 +198,6 @@ geoip,tz,非洲
 geoip,ug,非洲
 geoip,za,非洲
 geoip,zw,非洲
-
-# ⬇️北美洲
-
-geoip,ca,北美洲
-geoip,mx,北美洲
-geoip,tt,北美洲
-
-# ⬇️南美洲
-
-geoip,ar,南美洲
-geoip,bo,南美洲
-geoip,br,南美洲
-geoip,cl,南美洲
-geoip,co,南美洲
-geoip,ec,南美洲
-geoip,gf,南美洲
-geoip,gy,南美洲
-geoip,pe,南美洲
 
 # ⬇️南极洲
 
