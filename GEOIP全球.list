@@ -1,66 +1,69 @@
 #GEOIP全球
+# ⬇️指定地区
 
-# ⬇️亚洲
+geoip,jp,日本
+geoip,kr,韩国
+geoip,hk,香港
+geoip,tw,台湾
+geoip,sg,新加坡
+geoip,us,美国
 
-geoip,af,亚洲
-geoip,ax,亚洲
-geoip,az,亚洲
-geoip,bh,亚洲
+# ⬇️东亚
+
+geoip,kp,亚洲
+geoip,mn,亚洲
+
+# ⬇️东南亚
+
+geoip,mo,亚洲
+geoip,la,亚洲
+geoip,mm,亚洲
+geoip,id,亚洲
+geoip,my,亚洲
+geoip,ph,亚洲
+geoip,th,亚洲
+geoip,tl,亚洲
+geoip,vn,亚洲
+
+
+# ⬇️南亚
+
 geoip,bd,亚洲
 geoip,bn,亚洲
 geoip,bt,亚洲
 geoip,cc,亚洲
-geoip,cn,亚洲
 geoip,cx,亚洲
-geoip,cy,亚洲
-geoip,ge,亚洲
-geoip,hk,亚洲
-geoip,id,亚洲
-geoip,il,亚洲
 geoip,in,亚洲
+geoip,kh,亚洲
+geoip,lk,亚洲
+geoip,mv,亚洲
+geoip,np,亚洲
+
+# ⬇️中亚
+
+geoip,kg,亚洲
+geoip,kz,亚洲
+geoip,pk,亚洲
+geoip,tm,亚洲
+geoip,tj,亚洲
+geoip,uz,亚洲
+
+
+# ⬇️西亚
+
+geoip,af,亚洲
+geoip,az,亚洲
+geoip,bh,亚洲
+geoip,il,亚洲
 geoip,ir,亚洲
 geoip,iq,亚洲
-geoip,jp,亚洲
 geoip,jo,亚洲
-geoip,kg,亚洲
-geoip,kh,亚洲
-geoip,kp,亚洲
-geoip,kr,亚洲
 geoip,kw,亚洲
-geoip,kz,亚洲
-geoip,la,亚洲
 geoip,lb,亚洲
-geoip,lk,亚洲
-geoip,ls,亚洲
-geoip,lt,亚洲
-geoip,lu,亚洲
-geoip,lv,亚洲
-geoip,ma,亚洲
-geoip,mm,亚洲
-geoip,mn,亚洲
-geoip,mo,亚洲
-geoip,mv,亚洲
-geoip,my,亚洲
-geoip,np,亚洲
 geoip,om,亚洲
-geoip,pk,亚洲
-geoip,ph,亚洲
 geoip,qa,亚洲
 geoip,sa,亚洲
-geoip,sg,亚洲
-geoip,sj,亚洲
-geoip,sk,亚洲
 geoip,sy,亚洲
-geoip,th,亚洲
-geoip,tm,亚洲
-geoip,tw,亚洲
-geoip,tj,亚洲
-geoip,tl,亚洲
-geoip,tr,亚洲
-geoip,tt,亚洲
-geoip,ua,亚洲
-geoip,uz,亚洲
-geoip,vn,亚洲
 geoip,ye,亚洲
 
 # ⬇️大洋洲
@@ -90,11 +93,13 @@ geoip,al,欧洲
 geoip,am,欧洲
 geoip,at,欧洲
 geoip,az,欧洲
+geoip,ax,欧洲
 geoip,ba,欧洲
 geoip,be,欧洲
 geoip,bg,欧洲
 geoip,by,欧洲
 geoip,ch,欧洲
+geoip,cy,欧洲
 geoip,cz,欧洲
 geoip,de,欧洲
 geoip,dk,欧洲
@@ -125,6 +130,7 @@ geoip,ro,欧洲
 geoip,ru,欧洲
 geoip,se,欧洲
 geoip,si,欧洲
+geoip,sj,欧洲
 geoip,sk,欧洲
 geoip,tr,欧洲
 geoip,ua,欧洲
@@ -135,8 +141,6 @@ geoip,uk,欧洲
 geoip,ao,非洲
 geoip,bj,非洲
 geoip,bw,非洲
-geoip,bw,非洲
-geoip,cm,非洲
 geoip,cd,非洲
 geoip,cg,非洲
 geoip,ci,非洲
@@ -167,13 +171,11 @@ geoip,sc,非洲
 geoip,sd,非洲
 geoip,sl,非洲
 geoip,so,非洲
-geoip,za,非洲
 geoip,sn,非洲
 geoip,st,非洲
 geoip,sz,非洲
 geoip,tg,非洲
 geoip,tn,非洲
-geoip,ug,非洲
 geoip,tz,非洲
 geoip,ug,非洲
 geoip,za,非洲
@@ -183,7 +185,7 @@ geoip,zw,非洲
 
 geoip,ca,北美洲
 geoip,mx,北美洲
-geoip,us,北美洲
+geoip,tt,北美洲
 
 # ⬇️南美洲
 
