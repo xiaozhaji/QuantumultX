@@ -1,35 +1,202 @@
 #GEOIP全球
-geoip, ae, 欧洲
-geoip, au, 新加坡
-geoip, br, 美国
-geoip, ca, 美国
-geoip, de, 欧洲
-geoip, dk, 欧洲
-geoip, es, 欧洲
-geoip, fi, 欧洲
-geoip, fr, 欧洲
-geoip, gb, 欧洲
-geoip, gr, 欧洲
-geoip, hk, 香港
-geoip, id, 新加坡
-geoip, il, 欧洲
-geoip, in, 新加坡
-geoip, iq, 欧洲
-geoip, ir, 欧洲
-geoip, it, 欧洲
-geoip, jp, 日本
-geoip, kr, 日本
-geoip, mo, 香港
-geoip, my, 新加坡
-geoip, nl, 欧洲
-geoip, no, 欧洲
-geoip, nz, 新加坡
-geoip, ph, 新加坡
-geoip, ru, 欧洲
-geoip, sa, 欧洲
-geoip, sg, 新加坡
-geoip, th, 新加坡
-geoip, tr, 欧洲
-geoip, tw, 台湾
-geoip, us, 美国
-geoip, vn, 香港
+
+# ⬇️亚洲
+
+geoip,af,亚洲
+geoip,ax,亚洲
+geoip,az,亚洲
+geoip,bh,亚洲
+geoip,bd,亚洲
+geoip,bn,亚洲
+geoip,bt,亚洲
+geoip,cc,亚洲
+geoip,cn,亚洲
+geoip,cx,亚洲
+geoip,cy,亚洲
+geoip,ge,亚洲
+geoip,hk,亚洲
+geoip,id,亚洲
+geoip,il,亚洲
+geoip,in,亚洲
+geoip,ir,亚洲
+geoip,iq,亚洲
+geoip,jp,亚洲
+geoip,jo,亚洲
+geoip,kg,亚洲
+geoip,kh,亚洲
+geoip,kp,亚洲
+geoip,kr,亚洲
+geoip,kw,亚洲
+geoip,kz,亚洲
+geoip,la,亚洲
+geoip,lb,亚洲
+geoip,lk,亚洲
+geoip,ls,亚洲
+geoip,lt,亚洲
+geoip,lu,亚洲
+geoip,lv,亚洲
+geoip,ma,亚洲
+geoip,mm,亚洲
+geoip,mn,亚洲
+geoip,mo,亚洲
+geoip,mv,亚洲
+geoip,my,亚洲
+geoip,np,亚洲
+geoip,om,亚洲
+geoip,pk,亚洲
+geoip,ph,亚洲
+geoip,qa,亚洲
+geoip,sa,亚洲
+geoip,sg,亚洲
+geoip,sj,亚洲
+geoip,sk,亚洲
+geoip,sy,亚洲
+geoip,th,亚洲
+geoip,tm,亚洲
+geoip,tw,亚洲
+geoip,tj,亚洲
+geoip,tl,亚洲
+geoip,tr,亚洲
+geoip,tt,亚洲
+geoip,ua,亚洲
+geoip,uz,亚洲
+geoip,vn,亚洲
+geoip,ye,亚洲
+
+# ⬇️非洲
+
+geoip,ao,非洲
+geoip,bj,非洲
+geoip,bw,非洲
+geoip,bw,非洲
+geoip,cm,非洲
+geoip,cd,非洲
+geoip,cg,非洲
+geoip,ci,非洲
+geoip,cm,非洲
+geoip,dz,非洲
+geoip,eg,非洲
+geoip,gq,非洲
+geoip,ga,非洲
+geoip,gm,非洲
+geoip,gh,非洲
+geoip,gn,非洲
+geoip,gw,非洲
+geoip,ke,非洲
+geoip,ls,非洲
+geoip,lr,非洲
+geoip,ly,非洲
+geoip,ma,非洲
+geoip,mg,非洲
+geoip,ml,非洲
+geoip,mr,非洲
+geoip,mw,非洲
+geoip,mz,非洲
+geoip,na,非洲
+geoip,ne,非洲
+geoip,ng,非洲
+geoip,rw,非洲
+geoip,sc,非洲
+geoip,sd,非洲
+geoip,sl,非洲
+geoip,so,非洲
+geoip,za,非洲
+geoip,sn,非洲
+geoip,st,非洲
+geoip,sz,非洲
+geoip,tg,非洲
+geoip,tn,非洲
+geoip,ug,非洲
+geoip,tz,非洲
+geoip,ug,非洲
+geoip,za,非洲
+geoip,zw,非洲
+
+# ⬇️北美洲
+
+geoip,ca,北美洲
+geoip,mx,北美洲
+geoip,us,北美洲
+
+# ⬇️南美洲
+
+geoip,ar,南美洲
+geoip,bo,南美洲
+geoip,br,南美洲
+geoip,cl,南美洲
+geoip,co,南美洲
+geoip,ec,南美洲
+geoip,gf,南美洲
+geoip,gy,南美洲
+geoip,pe,南美洲
+
+# ⬇️大洋洲
+
+geoip,au,大洋洲
+geoip,ck,大洋洲
+geoip,fj,大洋洲
+geoip,fm,大洋洲
+geoip,gu,大洋洲
+geoip,ki,大洋洲
+geoip,mh,大洋洲
+geoip,nr,大洋洲
+geoip,nu,大洋洲
+geoip,nz,大洋洲
+geoip,pw,大洋洲
+geoip,pg,大洋洲
+geoip,pn,大洋洲
+geoip,sb,大洋洲
+geoip,to,大洋洲
+geoip,tv,大洋洲
+geoip,vu,大洋洲
+
+# ⬇️欧洲
+
+geoip,ad,欧洲
+geoip,al,欧洲
+geoip,am,欧洲
+geoip,at,欧洲
+geoip,az,欧洲
+geoip,ba,欧洲
+geoip,be,欧洲
+geoip,bg,欧洲
+geoip,by,欧洲
+geoip,ch,欧洲
+geoip,cz,欧洲
+geoip,de,欧洲
+geoip,dk,欧洲
+geoip,ee,欧洲
+geoip,es,欧洲
+geoip,fi,欧洲
+geoip,fr,欧洲
+geoip,gb,欧洲
+geoip,ge,欧洲
+geoip,gr,欧洲
+geoip,hr,欧洲
+geoip,hu,欧洲
+geoip,ie,欧洲
+geoip,il,欧洲
+geoip,is,欧洲
+geoip,it,欧洲
+geoip,kz,欧洲
+geoip,lv,欧洲
+geoip,lt,欧洲
+geoip,lu,欧洲
+geoip,mk,欧洲
+geoip,mt,欧洲
+geoip,nl,欧洲
+geoip,no,欧洲
+geoip,pl,欧洲
+geoip,pt,欧洲
+geoip,ro,欧洲
+geoip,ru,欧洲
+geoip,se,欧洲
+geoip,si,欧洲
+geoip,sk,欧洲
+geoip,tr,欧洲
+geoip,ua,欧洲
+geoip,uk,欧洲
+
+# ⬇️南极洲
+
+geoip,aq,南极洲
