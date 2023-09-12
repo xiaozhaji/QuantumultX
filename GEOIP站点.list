@@ -4,6 +4,6 @@ geoip, facebook, 节点选择
 geoip, google, 节点选择
 geoip, telegram, 节点选择
 geoip, twitter, 节点选择
-geoip, fastly, 美国
-geoip, cloudflare, 美国
-geoip, cloudfront, 美国
+geoip, fastly, 节点选择
+geoip, cloudflare, 节点选择
+geoip, cloudfront, 节点选择
