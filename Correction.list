@@ -33,7 +33,7 @@ host-suffix, geforce.com, 节点选择
 host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
-;host-suffix, itunes.apple.com, 节点选择
+host-suffix, itunes.apple.com, 节点选择
 host-suffix, tiktokv.com, 家宽
 
 # 直连
