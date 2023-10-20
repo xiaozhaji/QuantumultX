@@ -105,5 +105,5 @@ host-suffix, weixinbridge.com, direct
 
 # IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
 # 抖音
-host-suffix, snssdk.com,IP
-host-suffix, amemv.com,IP
+#host-suffix, snssdk.com,IP
+#host-suffix, amemv.com,IP
