@@ -107,8 +107,7 @@ host-suffix, apple.com, direct
 host-suffix, zjcdn.com, direct
 host-suffix, douyincdn.com, direct
 
-# IP反追踪 源规则：https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/quantumultx.list
-# 抖音
+# IP反追踪 抖音
 host, tosv.byted.org, 节点选择
 
 #host-suffix, snssdk.com,IP
