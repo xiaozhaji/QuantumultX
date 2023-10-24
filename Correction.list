@@ -3,6 +3,7 @@
 host, o33249.ingest.sentry.io, reject
 
 host-suffix, sentry.io, reject
+host-suffix, anticheatexpert.com, reject
 
 # 代理
 host, receiptcheck.quantumult.app, 节点选择
@@ -35,6 +36,7 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
+host-suffix, twimg.com, 节点选择
 
 # 直连
 user-agent, SpeedTest*, direct
@@ -107,6 +109,7 @@ host-suffix, icloud.com, direct
 host-suffix, apple.com, direct
 host-suffix, zjcdn.com, direct
 host-suffix, douyincdn.com, direct
+host-suffix, ghproxy.com, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
