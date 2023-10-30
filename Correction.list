@@ -16,7 +16,7 @@ host, ip-api.com, 节点选择
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 
-host-wildcard, *.itunes.apple.com, 0.2倍
+host-wildcard, *.itunes.apple.com, 节点选择
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
