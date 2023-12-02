@@ -1,4 +1,4 @@
-#GEOIP全球
+# GEOIP全球
 # ⬇️指定地区
 
 geoip,jp,日本
@@ -24,8 +24,6 @@ geoip,ph,新加坡
 geoip,id,新加坡
 geoip,my,新加坡
 geoip,tl,新加坡
-
-
 
 # ⬇️南亚
 
