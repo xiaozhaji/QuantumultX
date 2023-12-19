@@ -13,6 +13,7 @@ host, sydney.bing.com, 节点选择
 host, bard.google.com, 节点选择
 host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 节点选择
+host, music.apple.com, 节点选择
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
