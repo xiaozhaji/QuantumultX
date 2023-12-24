@@ -9,8 +9,8 @@ host-suffix, anticheatexpert.com, reject
 host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
-host, sydney.bing.com, 节点选择
-host, bard.google.com, 节点选择
+host, sydney.bing.com, UDPN
+host, bard.google.com, UDPN
 host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 节点选择
 host, music.apple.com, 节点选择
@@ -19,7 +19,7 @@ host, wetype.weixin.qq.com, UDPN
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 
-host-wildcard, *.tv.apple.com, 节点选择
+host-wildcard, *.tv.apple.com, 低倍率
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
