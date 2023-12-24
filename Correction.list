@@ -39,7 +39,8 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
-host-suffix, twimg.com, 节点选择
+host-suffix, twimg.com, UDPN
+host-suffix, twitter.com, UDPN
 
 # 直连
 user-agent, SpeedTest*, direct
@@ -114,6 +115,11 @@ host-suffix, zjcdn.com, direct
 host-suffix, douyincdn.com, direct
 host-suffix, ghproxy.com, direct
 host-suffix, icloud-content.com, direct
+host-suffix, alipay.com, direct
+host-suffix, xhscdn.net, direct
+host-suffix, qq.com, direct
+host-suffix, ithome.com, direct
+host-suffix, cdn-apple.com, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
