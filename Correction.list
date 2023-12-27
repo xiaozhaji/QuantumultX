@@ -15,6 +15,10 @@ host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 节点选择
 host, music.apple.com, 节点选择
 host, wetype.weixin.qq.com, UDPN
+host, hls.itunes.apple.com, 低倍率
+host, hls-svod.itunes.apple.com, 低倍率
+host, itunes.apple.com, 节点选择
+host, hls-amt.itunes.apple.com, 低倍率
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
