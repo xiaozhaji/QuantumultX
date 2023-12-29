@@ -19,6 +19,8 @@ host, hls.itunes.apple.com, 低倍率
 host, hls-svod.itunes.apple.com, 低倍率
 host, itunes.apple.com, 节点选择
 host, hls-amt.itunes.apple.com, 低倍率
+host, mvod.itunes.apple.com, 低倍率
+host, aod.itunes.apple.com, 低倍率
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
@@ -126,6 +128,7 @@ host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
 host-suffix, cdn-apple.com, direct
+host-suffix, mzstatic.com, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
