@@ -49,6 +49,7 @@ host-suffix, tiktokv.com, 家宽
 host-suffix, twimg.com, UDPN
 host-suffix, twitter.com, UDPN
 host-suffix, openai.com, UDPN
+host-suffix, mzstatic.com, 低倍率
 
 # 直连
 user-agent, SpeedTest*, direct
@@ -128,7 +129,6 @@ host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
 host-suffix, cdn-apple.com, direct
-host-suffix, mzstatic.com, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
