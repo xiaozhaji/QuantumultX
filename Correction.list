@@ -21,6 +21,8 @@ host, itunes.apple.com, 节点选择
 host, hls-amt.itunes.apple.com, 低倍率
 host, mvod.itunes.apple.com, 低倍率
 host, aod.itunes.apple.com, 低倍率
+host, testflight.apple.com, 低倍率
+host, amp-api-edge.apps.apple.com, 低倍率
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
