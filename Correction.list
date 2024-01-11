@@ -25,12 +25,12 @@ ip-cidr, 169.54.129.22/32, reject
 host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
-host, sydney.bing.com, UDPN
-host, bard.google.com, UDPN
+host, sydney.bing.com, 高级节点
+host, bard.google.com, 高级节点
 host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 节点选择
 host, music.apple.com, 节点选择
-host, wetype.weixin.qq.com, UDPN
+host, wetype.weixin.qq.com, 高级节点
 host, hls.itunes.apple.com, 低倍率
 host, hls-svod.itunes.apple.com, 低倍率
 host, itunes.apple.com, 节点选择
@@ -42,7 +42,7 @@ host, amp-api-edge.apps.apple.com, 低倍率
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
-host-keyword, openai, UDPN
+host-keyword, openai, 高级节点
 
 host-wildcard, *.tv.apple.com, 低倍率
 
@@ -64,9 +64,9 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
-host-suffix, twimg.com, UDPN
-host-suffix, twitter.com, UDPN
-host-suffix, openai.com, UDPN
+host-suffix, twimg.com, 高级节点
+host-suffix, twitter.com, 高级节点
+host-suffix, openai.com, 高级节点
 host-suffix, mzstatic.com, 低倍率
 
 # 直连
