@@ -39,6 +39,7 @@ host, mvod.itunes.apple.com, 低倍率
 host, aod.itunes.apple.com, 低倍率
 host, testflight.apple.com, 低倍率
 host, amp-api-edge.apps.apple.com, 低倍率
+host, monitor.qq.com, 高级节点
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
