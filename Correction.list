@@ -30,7 +30,7 @@ host, bard.google.com, 高级节点
 host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 节点选择
 host, music.apple.com, 节点选择
-host, wetype.weixin.qq.com, 隐私
+host, wetype.weixin.qq.com, 高级节点
 host, hls.itunes.apple.com, 低倍率
 host, hls-svod.itunes.apple.com, 低倍率
 host, itunes.apple.com, 节点选择
@@ -39,7 +39,7 @@ host, mvod.itunes.apple.com, 低倍率
 host, aod.itunes.apple.com, 低倍率
 host, testflight.apple.com, 低倍率
 host, amp-api-edge.apps.apple.com, 低倍率
-host, monitor.qq.com, 隐私
+host, monitor.qq.com, 高级节点
 host, generativelanguage.googleapis.com, 高级节点
 
 host-keyword, mtalk, 节点选择
