@@ -28,7 +28,7 @@ host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 高级节点
 host, bard.google.com, 高级节点
 host, ip-api.com, 节点选择
-host, apptrailers.itunes.apple.com, 节点选择
+host, apptrailers.itunes.apple.com, 低倍率
 host, music.apple.com, 节点选择
 host, wetype.weixin.qq.com, 高级节点
 host, hls.itunes.apple.com, 低倍率
@@ -37,8 +37,8 @@ host, itunes.apple.com, 节点选择
 host, hls-amt.itunes.apple.com, 低倍率
 host, mvod.itunes.apple.com, 低倍率
 host, aod.itunes.apple.com, 低倍率
-host, testflight.apple.com, 低倍率
-host, amp-api-edge.apps.apple.com, 低倍率
+host, testflight.apple.com, 节点选择
+host, amp-api-edge.apps.apple.com, 节点选择
 host, monitor.qq.com, 高级节点
 host, generativelanguage.googleapis.com, 高级节点
 
@@ -66,10 +66,10 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, 节点选择
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
-host-suffix, twimg.com, 𝕏 
-host-suffix, twitter.com, 𝕏 
+host-suffix, twimg.com, 𝕏
+host-suffix, twitter.com, 𝕏
 host-suffix, openai.com, 高级节点
-host-suffix, mzstatic.com, 低倍率
+host-suffix, mzstatic.com, 节点选择
 
 # 直连
 user-agent, SpeedTest*, direct
