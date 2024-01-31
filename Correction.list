@@ -26,7 +26,7 @@ host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 高级节点
-host, bard.google.com, 高级节点
+host, bard.google.com, 日本
 host, ip-api.com, 节点选择
 host, apptrailers.itunes.apple.com, 低倍率
 host, music.apple.com, 节点选择
@@ -40,7 +40,7 @@ host, aod.itunes.apple.com, 低倍率
 host, testflight.apple.com, 节点选择
 host, amp-api-edge.apps.apple.com, 节点选择
 host, monitor.qq.com, 高级节点
-host, generativelanguage.googleapis.com, 高级节点
+host, generativelanguage.googleapis.com, 日本
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
@@ -63,11 +63,11 @@ host-suffix, nvidia.com, 节点选择
 host-suffix, nvidia.cn, 节点选择
 host-suffix, geforce.com, 节点选择
 host-suffix, geforce.cn, 节点选择
-host-suffix, bing.com, 节点选择
+host-suffix, bing.com, 高级节点
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
-host-suffix, twimg.com, 𝕏
-host-suffix, twitter.com, 𝕏
+host-suffix, twimg.com, 高级节点
+host-suffix, twitter.com, 高级节点
 host-suffix, openai.com, 高级节点
 host-suffix, mzstatic.com, 节点选择
 
