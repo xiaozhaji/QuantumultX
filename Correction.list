@@ -55,8 +55,8 @@ host-keyword, googleapis, 节点选择
 host-keyword, openai, 高级节点
 
 host-wildcard, *.tv.apple.com, Apple
-host-wildcard, *.ls.apple.com, Apple
-host-wildcard, *-courier.push.apple.com, Apple
+;host-wildcard, *.ls.apple.com, Apple
+;host-wildcard, *-courier.push.apple.com, Apple
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
