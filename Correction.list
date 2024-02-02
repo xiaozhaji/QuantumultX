@@ -46,7 +46,7 @@ host, generativelanguage.googleapis.com, Bard
 ;host, setup.icloud.com, Apple
 ;host, metrics.icloud.com, Apple
 host, ocsp.pki.goog, 节点选择
-host, ca.iadsdk.apple.com, Apple
+;host, ca.iadsdk.apple.com, Apple
 ;host, xp.apple.com, Apple
 ;host, fpinit.itunes.apple.com, Apple
 
