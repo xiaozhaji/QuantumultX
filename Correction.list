@@ -26,27 +26,35 @@ host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 高级节点
-host, bard.google.com, 日本
+host, bard.google.com, Bard
 host, ip-api.com, 节点选择
-host, apptrailers.itunes.apple.com, 低倍率
-host, music.apple.com, 节点选择
+host, apptrailers.itunes.apple.com, Apple
+host, music.apple.com, Apple
 host, wetype.weixin.qq.com, 高级节点
-host, hls.itunes.apple.com, 低倍率
-host, hls-svod.itunes.apple.com, 低倍率
-host, itunes.apple.com, 节点选择
-host, hls-amt.itunes.apple.com, 低倍率
-host, mvod.itunes.apple.com, 低倍率
-host, aod.itunes.apple.com, 低倍率
-host, testflight.apple.com, 节点选择
-host, amp-api-edge.apps.apple.com, 节点选择
+host, hls.itunes.apple.com, Apple
+host, hls-svod.itunes.apple.com, Apple
+host, itunes.apple.com, Apple
+host, hls-amt.itunes.apple.com, Apple
+host, mvod.itunes.apple.com, Apple
+host, aod.itunes.apple.com, Apple
+host, testflight.apple.com, Apple
+host, amp-api-edge.apps.apple.com, Apple
 host, monitor.qq.com, 高级节点
-host, generativelanguage.googleapis.com, 日本
+host, generativelanguage.googleapis.com, Bard
+host, probe.icloud.com, Apple
+host, gateway.icloud.com, Apple
+host, setup.icloud.com, Apple
+host, metrics.icloud.com, Apple
+host, ocsp.pki.goog, 节点选择
+host, ca.iadsdk.apple.com, Apple
+host, xp.apple.com, Apple
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 host-keyword, openai, 高级节点
 
-host-wildcard, *.tv.apple.com, 低倍率
+host-wildcard, *.tv.apple.com, Apple
+host-wildcard, *-ssl.ls.apple.com, Apple
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
@@ -154,10 +162,10 @@ host-suffix, cdn-apple.com, direct
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
 
-#host-suffix, snssdk.com,IP
-#host-suffix, amemv.com,IP
+#host-suffix, snssdk.com,IP修改
+#host-suffix, amemv.com,IP修改
 
-host-wildcard, *-*-*-ipainner.amemv.com, IP
-host-wildcard, *-*-lq.amemv.com, IP
-host-wildcard, *-*-hl.amemv.com, IP
-host-wildcard, *-*-lf.amemv.com, IP
+host-wildcard, *-*-*-ipainner.amemv.com, IP修改
+host-wildcard, *-*-lq.amemv.com, IP修改
+host-wildcard, *-*-hl.amemv.com, IP修改
+host-wildcard, *-*-lf.amemv.com, IP修改
