@@ -28,27 +28,27 @@ host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 高级节点
 host, bard.google.com, Bard
 host, ip-api.com, 节点选择
-host, apptrailers.itunes.apple.com, Apple
-host, music.apple.com, Apple
+;host, apptrailers.itunes.apple.com, Apple
+;host, music.apple.com, Apple
 host, wetype.weixin.qq.com, 高级节点
-host, hls.itunes.apple.com, Apple
-host, hls-svod.itunes.apple.com, Apple
-host, itunes.apple.com, Apple
-host, hls-amt.itunes.apple.com, Apple
+;host, hls.itunes.apple.com, Apple
+;host, hls-svod.itunes.apple.com, Apple
+;host, itunes.apple.com, Apple
+;host, hls-amt.itunes.apple.com, Apple
 host, mvod.itunes.apple.com, Apple
-host, aod.itunes.apple.com, Apple
-host, testflight.apple.com, Apple
-host, amp-api-edge.apps.apple.com, Apple
+;host, aod.itunes.apple.com, Apple
+;host, testflight.apple.com, Apple
+;host, amp-api-edge.apps.apple.com, Apple
 host, monitor.qq.com, 高级节点
 host, generativelanguage.googleapis.com, Bard
-host, probe.icloud.com, Apple
-host, gateway.icloud.com, Apple
-host, setup.icloud.com, Apple
-host, metrics.icloud.com, Apple
+;host, probe.icloud.com, Apple
+;host, gateway.icloud.com, Apple
+;host, setup.icloud.com, Apple
+;host, metrics.icloud.com, Apple
 host, ocsp.pki.goog, 节点选择
 host, ca.iadsdk.apple.com, Apple
-host, xp.apple.com, Apple
-host, fpinit.itunes.apple.com, Apple
+;host, xp.apple.com, Apple
+;host, fpinit.itunes.apple.com, Apple
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
@@ -149,23 +149,23 @@ host-suffix, jin10.com, direct
 host-suffix, ladydaily.com, direct
 host-suffix, lusun.com, direct
 host-suffix, weixinbridge.com, direct
-host-suffix, icloud.com, direct
-host-suffix, apple.com, direct
+;host-suffix, icloud.com, direct
+;host-suffix, apple.com, direct
 host-suffix, zjcdn.com, direct
 host-suffix, douyincdn.com, direct
 host-suffix, ghproxy.com, direct
-host-suffix, icloud-content.com, direct
+;host-suffix, icloud-content.com, direct
 host-suffix, alipay.com, direct
 host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
-host-suffix, cdn-apple.com, direct
+;host-suffix, cdn-apple.com, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
 
-#host-suffix, snssdk.com,IP修改
-#host-suffix, amemv.com,IP修改
+#host-suffix, snssdk.com, IP修改
+#host-suffix, amemv.com, IP修改
 
 host-wildcard, *-*-*-ipainner.amemv.com, IP修改
 host-wildcard, *-*-lq.amemv.com, IP修改
