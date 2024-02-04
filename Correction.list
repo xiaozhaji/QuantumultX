@@ -36,7 +36,7 @@ host, wetype.weixin.qq.com, 高级节点
 ;host, hls-svod.itunes.apple.com, Apple
 ;host, itunes.apple.com, Apple
 ;host, hls-amt.itunes.apple.com, Apple
-;host, mvod.itunes.apple.com, Apple
+host, mvod.itunes.apple.com, 低倍率
 ;host, aod.itunes.apple.com, Apple
 ;host, testflight.apple.com, Apple
 ;host, amp-api-edge.apps.apple.com, Apple
