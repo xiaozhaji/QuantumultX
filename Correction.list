@@ -22,6 +22,7 @@ ip-cidr, 58.20.196.160/32, reject
 ip-cidr, 169.54.129.22/32, reject
 
 # 代理
+ip-asn, 714, Apple
 host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
@@ -54,7 +55,7 @@ host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 host-keyword, openai, 高级节点
 
-;host-wildcard, *.tv.apple.com, Apple
+host-wildcard, *.tv.apple.com, 低倍率
 ;host-wildcard, *.ls.apple.com, Apple
 ;host-wildcard, *-courier.push.apple.com, Apple
 
