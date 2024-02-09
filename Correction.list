@@ -27,7 +27,6 @@ host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, 高级节点
-host, bard.google.com, Bard
 host, ip-api.com, 节点选择
 ;host, apptrailers.itunes.apple.com, Apple
 ;host, music.apple.com, Apple
@@ -50,7 +49,7 @@ host, ocsp.pki.goog, 节点选择
 ;host, ca.iadsdk.apple.com, Apple
 ;host, xp.apple.com, Apple
 ;host, fpinit.itunes.apple.com, Apple
-host, gemini.google.com, Bard
+host, gemini.google.com, Gemini
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
