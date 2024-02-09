@@ -40,7 +40,7 @@ host, mvod.itunes.apple.com, 低倍率
 ;host, testflight.apple.com, Apple
 ;host, amp-api-edge.apps.apple.com, Apple
 host, monitor.qq.com, 高级节点
-host, generativelanguage.googleapis.com, Bard
+host, generativelanguage.googleapis.com, Gemini
 ;host, probe.icloud.com, Apple
 ;host, gateway.icloud.com, Apple
 ;host, setup.icloud.com, Apple
