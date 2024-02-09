@@ -50,6 +50,7 @@ host, ocsp.pki.goog, 节点选择
 ;host, ca.iadsdk.apple.com, Apple
 ;host, xp.apple.com, Apple
 ;host, fpinit.itunes.apple.com, Apple
+host, gemini.google.com, Bard
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
