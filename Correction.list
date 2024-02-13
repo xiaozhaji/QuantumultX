@@ -23,6 +23,7 @@ ip-cidr, 169.54.129.22/32, reject
 
 # 代理
 ip-asn, 714, Apple
+ip-asn, 6185, Apple
 host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
