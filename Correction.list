@@ -4,8 +4,8 @@ host, hub5idx.v6.shub.sandai.net, reject
 host, hub5emu.v6.shub.sandai.net, reject
 host, hub5btmain.v6.shub.sandai.net, reject
 host, o33249.ingest.sentry.io, reject
-host, rmonitor.qq.com, reject
 host, monitor.qq.com, reject
+host, rmonitor.qq.com, reject
 
 host-keyword, corel, reject
 
