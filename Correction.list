@@ -6,6 +6,9 @@ host, hub5btmain.v6.shub.sandai.net, reject
 host, o33249.ingest.sentry.io, reject
 host, monitor.qq.com, reject
 host, rmonitor.qq.com, reject
+host-suffix, googleadservices-cn.com, reject
+host, googleads.g.doubleclick-cn.net, reject
+host-suffix, googleadsserving.cn, reject
 
 host-keyword, corel, reject
 
@@ -26,31 +29,16 @@ ip-cidr, 169.54.129.22/32, reject
 # 代理
 ip-asn, 714, Apple
 ip-asn, 6185, Apple
+
 host, receiptcheck.quantumult.app, 节点选择
 host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, Gemini
 host, ip-api.com, 节点选择
-;host, apptrailers.itunes.apple.com, Apple
-;host, music.apple.com, Apple
 host, wetype.weixin.qq.com, 高级节点
-;host, hls.itunes.apple.com, Apple
-;host, hls-svod.itunes.apple.com, Apple
-;host, itunes.apple.com, Apple
-;host, hls-amt.itunes.apple.com, Apple
 host, mvod.itunes.apple.com, 低倍率
-;host, aod.itunes.apple.com, Apple
-;host, testflight.apple.com, Apple
-;host, amp-api-edge.apps.apple.com, Apple
 host, generativelanguage.googleapis.com, Gemini
-;host, probe.icloud.com, Apple
-;host, gateway.icloud.com, Apple
-;host, setup.icloud.com, Apple
-;host, metrics.icloud.com, Apple
 host, ocsp.pki.goog, 节点选择
-;host, ca.iadsdk.apple.com, Apple
-;host, xp.apple.com, Apple
-;host, fpinit.itunes.apple.com, Apple
 host, gemini.google.com, Gemini
 
 host-keyword, mtalk, 节点选择
@@ -58,8 +46,6 @@ host-keyword, googleapis, 节点选择
 host-keyword, openai, 高级节点
 
 host-wildcard, *.tv.apple.com, 低倍率
-;host-wildcard, *.ls.apple.com, Apple
-;host-wildcard, *-courier.push.apple.com, Apple
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
@@ -82,7 +68,6 @@ host-suffix, tiktokv.com, 家宽
 host-suffix, twimg.com, 高级节点
 host-suffix, twitter.com, 高级节点
 host-suffix, openai.com, 高级节点
-;host-suffix, mzstatic.com, 节点选择
 host-suffix, googlevideo.com, 低倍率
 
 # 直连
@@ -153,17 +138,14 @@ host-suffix, jin10.com, direct
 host-suffix, ladydaily.com, direct
 host-suffix, lusun.com, direct
 host-suffix, weixinbridge.com, direct
-;host-suffix, icloud.com, direct
-;host-suffix, apple.com, direct
 host-suffix, zjcdn.com, direct
 host-suffix, douyincdn.com, direct
 host-suffix, ghproxy.com, direct
-;host-suffix, icloud-content.com, direct
 host-suffix, alipay.com, direct
 host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
-;host-suffix, cdn-apple.com, direct
+host, maps.weather.gov.hk, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
