@@ -82,6 +82,7 @@ host, tophub.today, direct
 host, ipv4.ddnspod.com, direct
 host, pv.sohu.com, direct
 host, ipv6-test.com, direct
+host, maps.weather.gov.hk, direct
 
 host-keyword, synology, direct
 host-keyword, quickconnect, direct
@@ -147,7 +148,6 @@ host-suffix, alipay.com, direct
 host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
-host, maps.weather.gov.hk, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
