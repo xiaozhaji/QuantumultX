@@ -87,6 +87,8 @@ host-keyword, synology, direct
 host-keyword, quickconnect, direct
 host-keyword, speedtest, direct
 host-keyword, aliyun, direct
+host-keyword, yuheng, direct
+host-keyword, yqc-premium, direct
   
 host-suffix, baidu.com, direct
 host-suffix, bcebos.com, direct
