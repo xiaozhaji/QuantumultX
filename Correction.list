@@ -43,7 +43,7 @@ host, gemini.google.com, Gemini
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
-host-keyword, openai, 高级节点
+host-keyword, openai, Gemini
 
 host-wildcard, *.tv.apple.com, 低倍率
 
@@ -67,7 +67,7 @@ host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
 host-suffix, twimg.com, 高级节点
 host-suffix, twitter.com, 高级节点
-host-suffix, openai.com, 高级节点
+host-suffix, openai.com, Gemini
 host-suffix, googlevideo.com, 低倍率
 
 # 直连
