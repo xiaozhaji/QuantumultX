@@ -69,6 +69,7 @@ host-suffix, twimg.com, 高级节点
 host-suffix, twitter.com, 高级节点
 host-suffix, openai.com, Gemini
 host-suffix, googlevideo.com, 低倍率
+host-suffix, chatgpt.com, Gemini
 
 # 直连
 user-agent, SpeedTest*, direct
