@@ -35,7 +35,6 @@ host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, Gemini
 host, ip-api.com, 节点选择
-host, wetype.weixin.qq.com, 高级节点
 host, mvod.itunes.apple.com, 低倍率
 host, generativelanguage.googleapis.com, Gemini
 host, ocsp.pki.goog, 节点选择
@@ -76,7 +75,6 @@ user-agent, SpeedTest*, direct
 
 host, time.windows.com, direct
 host, time.apple.com, direct
-host, xiaozhaji.myds.me, direct
 host, clash.razord.top, direct
 host, yacd.haishan.me, direct
 host, tophub.today, direct
