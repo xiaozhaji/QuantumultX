@@ -91,7 +91,10 @@ host-keyword, speedtest, direct
 host-keyword, aliyun, direct
 host-keyword, yuheng, direct
 host-keyword, yqc-premium, direct
-  
+
+host-wildcard, webcast*-*-*-*.amemv.com, direct
+host-wildcard, gspe*-ssl.ls.apple.com, direct
+
 host-suffix, baidu.com, direct
 host-suffix, bcebos.com, direct
 host-suffix, ooklaserver.net, direct
