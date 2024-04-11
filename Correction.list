@@ -150,7 +150,7 @@ host-suffix, alipay.com, direct
 host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
-host-suffix, ip.zxinc.org, direct
+host-suffix, zxinc.org, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, 节点选择
