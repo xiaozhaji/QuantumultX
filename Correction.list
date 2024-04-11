@@ -82,6 +82,7 @@ host, ipv4.ddnspod.com, direct
 host, pv.sohu.com, direct
 host, ipv6-test.com, direct
 host, maps.weather.gov.hk, direct
+host, ip.zxinc.org, direct
 
 host-keyword, synology, direct
 host-keyword, quickconnect, direct
