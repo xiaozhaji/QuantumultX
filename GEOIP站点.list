@@ -3,7 +3,7 @@ geoip, netflix,低倍率
 geoip, facebook, 节点选择
 geoip, google, 节点选择
 geoip, telegram, Telegram
-geoip, twitter, 高级节点
+geoip, twitter, 𝕏
 geoip, fastly, 节点选择
 geoip, cloudflare, 节点选择
 geoip, cloudfront, 节点选择
