@@ -35,7 +35,7 @@ host, speedtest-univ-results-api.speedtest.net, 节点选择
 host, user-api.speedtest.net, 节点选择
 host, sydney.bing.com, Gemini
 host, ip-api.com, 节点选择
-host, mvod.itunes.apple.com, 低倍率
+host, mvod.itunes.apple.com, 流媒体
 host, generativelanguage.googleapis.com, Gemini
 host, ocsp.pki.goog, 节点选择
 host, gemini.google.com, Gemini
@@ -44,7 +44,7 @@ host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 host-keyword, openai, Gemini
 
-host-wildcard, *.tv.apple.com, 低倍率
+host-wildcard, *.tv.apple.com, 流媒体
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
@@ -64,10 +64,10 @@ host-suffix, geforce.cn, 节点选择
 host-suffix, bing.com, Gemini
 host-suffix, ndmdhs.com, 节点选择
 host-suffix, tiktokv.com, 家宽
-host-suffix, twimg.com, 𝕏
-host-suffix, twitter.com, 𝕏
+host-suffix, twimg.com, Twitter
+host-suffix, twitter.com, Twitter
 host-suffix, openai.com, Gemini
-host-suffix, googlevideo.com, 低倍率
+host-suffix, googlevideo.com, 流媒体
 host-suffix, chatgpt.com, Gemini
 
 # 直连
