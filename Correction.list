@@ -39,6 +39,7 @@ host, mvod.itunes.apple.com, 流媒体
 host, generativelanguage.googleapis.com, Gemini
 host, ocsp.pki.goog, 节点选择
 host, gemini.google.com, Gemini
+host, iosapps.itunes.apple.com, Apple
 
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
