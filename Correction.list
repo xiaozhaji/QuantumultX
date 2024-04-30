@@ -43,6 +43,9 @@ host, gemini.google.com, Gemini
 host-keyword, mtalk, 节点选择
 host-keyword, googleapis, 节点选择
 host-keyword, openai, Gemini
+host-keyword, wbyun, 节点选择
+host-keyword, wbno1, 节点选择
+host-keyword, bailukeai, 节点选择
 
 host-wildcard, *.tv.apple.com, 流媒体
 
