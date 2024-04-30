@@ -6,9 +6,7 @@ host, hub5btmain.v6.shub.sandai.net, reject
 host, o33249.ingest.sentry.io, reject
 host, monitor.qq.com, reject
 host, rmonitor.qq.com, reject
-host-suffix, googleadservices-cn.com, reject
 host, googleads.g.doubleclick-cn.net, reject
-host-suffix, googleadsserving.cn, reject
 
 host-keyword, corel, reject
 
@@ -20,6 +18,8 @@ host-suffix, sentry.io, reject
 host-suffix, anticheatexpert.com, reject
 host-suffix, aida64.com, reject
 host-suffix, amplitude.com, reject
+host-suffix, googleadservices-cn.com, reject
+host-suffix, googleadsserving.cn, reject
 
 ip-cidr, 54.243.210.230/32, reject
 ip-cidr, 169.54.33.187/32, reject
