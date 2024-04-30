@@ -153,7 +153,7 @@ host-suffix, ithome.com, direct
 host-suffix, zxinc.org, direct
 
 # IP反追踪 抖音
-host, tosv.byted.org, 节点选择
+host, tosv.byted.org, reject
 
 #host-suffix, snssdk.com, IP修改
 #host-suffix, amemv.com, IP修改
