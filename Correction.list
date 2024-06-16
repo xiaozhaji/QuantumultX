@@ -75,8 +75,8 @@ host-suffix, twitter.com, Twitter
 host-suffix, openai.com, Gemini
 host-suffix, googlevideo.com, 流媒体
 host-suffix, chatgpt.com, Gemini
-host-suffix, www.googletagmanager.com, Gemini
-host-suffix, www.googleadservices.com, Gemini
+host-suffix, googletagmanager.com, Gemini
+host-suffix, googleadservices.com, Gemini
 host-suffix, google.com, Gemini
 
 
