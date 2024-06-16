@@ -41,6 +41,7 @@ host, ocsp.pki.goog, 节点选择
 host, gemini.google.com, Gemini
 host, iosapps.itunes.apple.com, Apple
 host, events-delivery.apple.com, 流媒体
+host, apptrailers.itunes.apple.com, Apple
 
 host-keyword, mtalk, Gemini
 host-keyword, googleapis, Gemini
