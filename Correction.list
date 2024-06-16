@@ -42,8 +42,8 @@ host, gemini.google.com, Gemini
 host, iosapps.itunes.apple.com, Apple
 host, events-delivery.apple.com, 流媒体
 
-host-keyword, mtalk, 节点选择
-host-keyword, googleapis, 节点选择
+host-keyword, mtalk, Gemini
+host-keyword, googleapis, Gemini
 host-keyword, openai, Gemini
 host-keyword, wbyun, 节点选择
 host-keyword, wbno1, 节点选择
@@ -56,8 +56,8 @@ host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
 host-suffix, weather.com, 节点选择
 host-suffix, windy.com, 节点选择
-host-suffix, gstatic.com, 节点选择
-host-suffix, doubleclick.net, 节点选择
+host-suffix, gstatic.com, Gemini
+host-suffix, doubleclick.net, Gemini
 host-suffix, fanart.tv, 节点选择
 host-suffix, themoviedb.org, 节点选择
 host-suffix, tmdb.org, 节点选择
@@ -75,6 +75,10 @@ host-suffix, twitter.com, Twitter
 host-suffix, openai.com, Gemini
 host-suffix, googlevideo.com, 流媒体
 host-suffix, chatgpt.com, Gemini
+host-suffix, www.googletagmanager.com, Gemini
+host-suffix, www.googleadservices.com, Gemini
+host-suffix, google.com, Gemini
+
 
 # 直连
 user-agent, SpeedTest*, direct
