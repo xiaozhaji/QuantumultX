@@ -167,8 +167,8 @@ host-suffix, ipip.net, direct
 # IP反追踪 抖音
 host, tosv.byted.org, reject
 
-#host-suffix, snssdk.com, IP修改
-#host-suffix, amemv.com, IP修改
+host-suffix, amemv.com, IP修改
+host-suffix, zijieapi.com, IP修改
 
 #host-wildcard, *-*-*-ipainner.amemv.com, IP修改
 #host-wildcard, *-*-lq.amemv.com, IP修改
