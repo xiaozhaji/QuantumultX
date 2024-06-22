@@ -4,8 +4,6 @@ host, hub5idx.v6.shub.sandai.net, reject
 host, hub5emu.v6.shub.sandai.net, reject
 host, hub5btmain.v6.shub.sandai.net, reject
 host, o33249.ingest.sentry.io, reject
-host, monitor.qq.com, reject
-host, rmonitor.qq.com, reject
 host, googleads.g.doubleclick-cn.net, reject
 
 host-keyword, corel, reject
@@ -162,6 +160,9 @@ host-suffix, xhscdn.net, direct
 host-suffix, qq.com, direct
 host-suffix, ithome.com, direct
 host-suffix, zxinc.org, direct
+host-suffix, ipinfo.io, direct
+host-suffix, ip.sb, direct
+host-suffix, ipip.net, direct
 
 # IP反追踪 抖音
 host, tosv.byted.org, reject
