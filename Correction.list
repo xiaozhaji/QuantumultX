@@ -173,4 +173,4 @@ host, tosv.byted.org, reject
 #host-wildcard, *-*-*-ipainner.amemv.com, IP修改
 #host-wildcard, *-*-lq.amemv.com, IP修改
 #host-wildcard, *-*-hl.amemv.com, IP修改
-h#ost-wildcard, *-*-lf.amemv.com, IP修改
+#host-wildcard, *-*-lf.amemv.com, IP修改
