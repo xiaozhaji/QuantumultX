@@ -170,7 +170,7 @@ host, tosv.byted.org, reject
 #host-suffix, snssdk.com, IP修改
 #host-suffix, amemv.com, IP修改
 
-host-wildcard, *-*-*-ipainner.amemv.com, IP修改
-host-wildcard, *-*-lq.amemv.com, IP修改
-host-wildcard, *-*-hl.amemv.com, IP修改
-host-wildcard, *-*-lf.amemv.com, IP修改
+#host-wildcard, *-*-*-ipainner.amemv.com, IP修改
+#host-wildcard, *-*-lq.amemv.com, IP修改
+#host-wildcard, *-*-hl.amemv.com, IP修改
+h#ost-wildcard, *-*-lf.amemv.com, IP修改
