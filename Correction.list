@@ -165,8 +165,6 @@ host-suffix, ip.sb, direct
 host-suffix, ipip.net, direct
 
 # IP反追踪 抖音
-host, tosv.byted.org, reject
-
 host-suffix, amemv.com, IP修改
 host-suffix, zijieapi.com, IP修改
 
