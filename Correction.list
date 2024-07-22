@@ -77,7 +77,7 @@ host-suffix, chatgpt.com, Gemini
 host-suffix, googletagmanager.com, Gemini
 host-suffix, googleadservices.com, Gemini
 host-suffix, google.com, Gemini
-
+host-suffix, google-analytics.com, 节点选择
 
 # 直连
 user-agent, SpeedTest*, direct
