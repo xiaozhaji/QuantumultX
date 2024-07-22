@@ -49,7 +49,7 @@ host-keyword, wbno1, 节点选择
 host-keyword, bailukeai, 节点选择
 
 host-wildcard, *.tv.apple.com, 流媒体
-host-wildcard, api*.smoot.apple.com, 节点选择
+host-wildcard, api*.smoot.apple.com, Apple
 
 host-suffix, adtidy.org, 节点选择
 host-suffix, deepl.com, 节点选择
